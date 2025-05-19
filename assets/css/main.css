@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Cakecafe';
+  src: url('@/assets/fonts/Cakecafe.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
