@@ -1,7 +1,7 @@
 <template>
   <span
     ref="containerRef"
-    class="inline-block whitespace-pre-wrap"
+    class="inline-block"
     :class="parentClassName"
     v-motion
     :initial="{ opacity: 1 }"
@@ -9,16 +9,21 @@
     @mouseenter="animateOn === 'hover' && startHovering()"
     @mouseleave="animateOn === 'hover' && stopHovering()"
   >
-    <span class="sr-only">{{ displayText }}</span>
+    <span class="sr-only" v-html="escapedDisplayText"></span>
 
-    <span aria-hidden="true">
-      <span
-        v-for="(char, index) in displayText.split('')"
-        :key="index"
-        :class="isRevealedOrDone(index) ? className : encryptedClassName"
-      >
-        {{ char }}
-      </span>
+    <span aria-hidden="true" class="whitespace-pre-wrap">
+      <template v-for="(line, lineIndex) in processedTextLines" :key="`line-${lineIndex}`">
+        <template v-if="lineIndex > 0">
+          <br />
+        </template>
+        <span
+          v-for="(char, charIndex) in line.split('')"
+          :key="`${lineIndex}-${charIndex}`"
+          :class="isRevealedOrDone(getGlobalIndex(lineIndex, charIndex)) ? className : encryptedClassName"
+        >
+          {{ char }}
+        </span>
+      </template>
     </span>
   </span>
 </template>
@@ -76,7 +81,25 @@ const props = defineProps({
   }
 })
 
-const displayText = ref(props.text)
+const rawDisplayText = ref(props.text)
+
+// Process the text to handle different types of line breaks
+const processText = (text) => {
+  // Replace HTML <br> tags with newlines
+  return text.replace(/<br\s*\/?>/gi, '\n')
+}
+
+// Apply the processing and split into lines
+const processedTextLines = computed(() => {
+  const processed = processText(rawDisplayText.value)
+  return processed.split('\n')
+})
+
+// For screen readers - escape the text to be readable
+const escapedDisplayText = computed(() => {
+  return rawDisplayText.value.replace(/\n/g, '<br>')
+})
+
 const isHovering = ref(false)
 const isScrambling = ref(false)
 const revealedIndices = ref(new Set())
@@ -85,6 +108,33 @@ const containerRef = ref(null)
 let interval = null
 let currentIteration = 0
 
+// Total character count across all lines
+const totalCharCount = computed(() => {
+  return processedTextLines.value.reduce((sum, line) => sum + line.length, 0)
+})
+
+// Map from line and char index to global index
+const getGlobalIndex = (lineIndex, charIndex) => {
+  let globalIndex = charIndex
+  for (let i = 0; i < lineIndex; i++) {
+    globalIndex += processedTextLines.value[i].length
+  }
+  return globalIndex
+}
+
+// Map from global index to line and char index
+const getLineAndCharIndex = (globalIndex) => {
+  let remainingChars = globalIndex
+  for (let lineIndex = 0; lineIndex < processedTextLines.value.length; lineIndex++) {
+    const lineLength = processedTextLines.value[lineIndex].length
+    if (remainingChars < lineLength) {
+      return { lineIndex, charIndex: remainingChars }
+    }
+    remainingChars -= lineLength
+  }
+  return { lineIndex: processedTextLines.value.length - 1, charIndex: processedTextLines.value[processedTextLines.value.length - 1].length - 1 }
+}
+
 const availableChars = computed(() => {
   if (props.useOriginalCharsOnly) {
     return Array.from(new Set(props.text.split(''))).filter(char => char !== ' ')
@@ -92,12 +142,12 @@ const availableChars = computed(() => {
   return props.characters.split('')
 })
 
-const isRevealedOrDone = (index) => {
-  return revealedIndices.value.has(index) || !isScrambling.value || !isHovering.value
+const isRevealedOrDone = (globalIndex) => {
+  return revealedIndices.value.has(globalIndex) || !isScrambling.value || !isHovering.value
 }
 
 const getNextIndex = (revealedSet) => {
-  const textLength = props.text.length
+  const textLength = totalCharCount.value
   switch (props.revealDirection) {
     case 'start':
       return revealedSet.size
@@ -124,42 +174,28 @@ const getNextIndex = (revealedSet) => {
   }
 }
 
-const shuffleText = (originalText, currentRevealed) => {
-  if (props.useOriginalCharsOnly) {
-    const positions = originalText.split('').map((char, i) => ({
-      char,
-      isSpace: char === ' ',
-      index: i,
-      isRevealed: currentRevealed.has(i)
-    }))
-
-    const nonSpaceChars = positions
-      .filter(p => !p.isSpace && !p.isRevealed)
-      .map(p => p.char)
-
-    for (let i = nonSpaceChars.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[nonSpaceChars[i], nonSpaceChars[j]] = [nonSpaceChars[j], nonSpaceChars[i]]
-    }
-
-    let charIndex = 0
-    return positions
-      .map(p => {
-        if (p.isSpace) return ' '
-        if (p.isRevealed) return originalText[p.index]
-        return nonSpaceChars[charIndex++]
-      })
-      .join('')
-  } else {
-    return originalText
+const shuffleText = () => {
+  const newLines = []
+  
+  for (let lineIndex = 0; lineIndex < processedTextLines.value.length; lineIndex++) {
+    const line = processedTextLines.value[lineIndex]
+    const shuffledLine = line
       .split('')
-      .map((char, i) => {
+      .map((char, charIndex) => {
+        const globalIndex = getGlobalIndex(lineIndex, charIndex)
         if (char === ' ') return ' '
-        if (currentRevealed.has(i)) return originalText[i]
+        if (revealedIndices.value.has(globalIndex)) return char
         return availableChars.value[Math.floor(Math.random() * availableChars.value.length)]
       })
       .join('')
+    
+    newLines.push(shuffledLine)
   }
+  
+  // When updating rawDisplayText, preserve the original break format
+  const processed = processText(props.text)
+  const originalBreakFormat = props.text.includes('<br') ? '<br>' : '\n'
+  rawDisplayText.value = newLines.join(originalBreakFormat)
 }
 
 const startScrambling = () => {
@@ -167,23 +203,23 @@ const startScrambling = () => {
   
   interval = setInterval(() => {
     if (props.sequential) {
-      if (revealedIndices.value.size < props.text.length) {
-        const nextIndex = getNextIndex(revealedIndices.value)
+      if (revealedIndices.value.size < totalCharCount.value) {
+        const nextGlobalIndex = getNextIndex(revealedIndices.value)
         const newRevealed = new Set(revealedIndices.value)
-        newRevealed.add(nextIndex)
+        newRevealed.add(nextGlobalIndex)
         revealedIndices.value = newRevealed
-        displayText.value = shuffleText(props.text, newRevealed)
+        shuffleText()
       } else {
         clearInterval(interval)
         isScrambling.value = false
       }
     } else {
-      displayText.value = shuffleText(props.text, revealedIndices.value)
+      shuffleText()
       currentIteration++
       if (currentIteration >= props.maxIterations) {
         clearInterval(interval)
         isScrambling.value = false
-        displayText.value = props.text
+        rawDisplayText.value = props.text
       }
     }
   }, props.speed)
@@ -195,7 +231,7 @@ const startHovering = () => {
 
 const stopHovering = () => {
   isHovering.value = false
-  displayText.value = props.text
+  rawDisplayText.value = props.text
   revealedIndices.value = new Set()
   isScrambling.value = false
   if (interval) {
@@ -233,6 +269,6 @@ onUnmounted(() => {
 
 // Update displayText when text prop changes
 watch(() => props.text, (newText) => {
-  displayText.value = newText
+  rawDisplayText.value = newText
 })
 </script>
