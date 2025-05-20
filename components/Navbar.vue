@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-[#263238] text-[#f4f4f4] border-b-3 border-black">
-        <div class="w-full block max-w-[80rem] mx-auto px-4 py-6">
+    <div class="bg-[#263238] text-[#f4f4f4] border-b-3 border-black overflow-hidden">
+        <div class="w-full block max-w-[80rem] mx-auto px-4 py-4 md:py-6 pb-0">
             <div class="flex justify-between" style="font-family: 'Cakecafe';">
                 <h1 class="text-[1.3rem]">AKINFEMI</h1>
                 <div class=" text-xl">
