@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full block max-w-[80rem] mx-auto px-4 py-6 text-center overflow-hidden">
+    <div class="w-full block max-w-[80rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4]">
          <h1>
       <DecryptedText
         text="Hi, I'm Onadeko Akinfemi Raphael"
@@ -9,6 +9,7 @@
         style="font-family: 'Cakecafe';"
       />
     </h1>
+     
     </div>
 </template>
 

@@ -4,12 +4,14 @@
     <Navbar />
     <Background />
     <Heading />
+    <Text />
 </div>
 </template>
 
 <script setup>
 import Background from './components/Background.vue';
 import Heading from './components/Home/Heading.vue'
+import Text from './components/Home/Text.vue'
 
 
 </script>
