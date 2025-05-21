@@ -9,7 +9,7 @@
         style="font-family: 'Cakecafe';"
       />
     </h1>
-     <div class=" flex gap-3 pt-[2rem]  pl-[9rem] text-[1.64rem]"> 
+     <div class=" flex gap-3 pt-[-2rem]  pl-[9rem] text-[1.64rem]"> 
             <Motion is="p" preset="slideVisibleBottom" :duration="800" class="">Software Engineer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1000" >Frontend Developer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1200" >UI/UX Designer ||</Motion> 

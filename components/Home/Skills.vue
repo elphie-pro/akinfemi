@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full block max-w-[80rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4]">
+    <div class="w-full block max-w-[80rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4] mt-[-2rem]">
         <div class="flex  gap-4 items-center">
                 <div class="w-[8rem] md:h-[.1rem] h-[4rem] bg-[#f4f4f4] "></div>
                 <h2 class="text-[2.3rem]">Skills</h2>
@@ -16,7 +16,9 @@
                 
             </div> 
             </div>
-
+            <div class="flex justify-center pt-[1rem]">
+                <button class="w-[13rem] h-[2.5rem] bg-[#f4f4f4] text-[#263238] text-[1rem] rounded-xl cursor-pointer items-center justify-center flex gap-3">VIEW ALL <img src="../../assets/images/arrow-right.svg" alt=""></button>
+            </div>
                 
                 
             </div>
@@ -48,22 +50,38 @@ const images = import.meta.glob('../../assets/images/*', { eager: true, as: 'url
         },
         {
             name: 'Next.Js',
-            img: images['../../assets/images/Vector.svg']
+            img: images['../../assets/images/nonicons_next-16.svg']
         },
         {
             name: 'Vue.JS',
-            img: images['../../assets/images/Vector.svg']
+            img: images['../../assets/images/logos_vue.svg']
         },
         {
             name: 'Nuxt.JS',
-            img: images['../../assets/images/Vector.svg']
+            img: images['../../assets/images/material-icon-theme_nuxt.svg']
         },
         {
             name: 'Figma',
-            img: images['../../assets/images/Vector.svg']
+            img: images['../../assets/images/material-icon-theme_figma.svg']
         },
         {
             name: 'Photoshop',
+            img: images['../../assets/images/devicon_photoshop.svg']
+        },
+        {
+            name: 'HTML',
+            img: images['../../assets/images/Vector.svg']
+        },
+        {
+            name: 'HTML',
+            img: images['../../assets/images/Vector.svg']
+        },
+        {
+            name: 'HTML',
+            img: images['../../assets/images/Vector.svg']
+        },
+        {
+            name: 'HTML',
             img: images['../../assets/images/Vector.svg']
         },
         {
