@@ -1,25 +1,25 @@
 <template>
     <div class="w-full block max-w-[80rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4] mt-[-2rem]">
-        <div class="flex  gap-4 items-center">
-                <div class="w-[8rem] md:h-[.1rem] h-[4rem] bg-[#f4f4f4] "></div>
-                <h2 class="text-[2.3rem]">Skills</h2>
-                <div class="w-[8rem] md:h-[.1rem] h-[4rem] bg-[#f4f4f4] mt-[rem] "></div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 ">
+            <Motion is="div" preset="slideVisibleTop" :duration="2200" class="flex gap-4 items-center" >
+                <Motion is="div" preset="slideVisibleLeft" :duration="1600" class="w-[8rem] md:h-[.1rem] h-[4rem] bg-[#f4f4f4] "></Motion> 
+                <Motion is="p" preset="slideVisibleTop" :duration="1400" class="text-[2.3rem]">Skills</Motion>
+                <Motion is="div" preset="slideVisibleRight" :duration="2000" class="w-[8rem] md:h-[.1rem] h-[4rem] bg-[#f4f4f4] mt-[rem] "></Motion>
+            </Motion>
+        
+            <Motion is="div" preset="slideVisibleBottom" :duration="1000" class="grid grid-cols-5 gap-4 p-4 "> 
             <div v-for="sk in Skills.slice(0,10)" :key="sk.name" class="flex flex-col gap-3 text-center">
                 <div class="flex flex-col gap-3 justify-center items-center">
                     <div class="w-[7rem] h-[7rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
-                    <img :src="sk.img" alt="" class="max-w-[70%] max-h-[70%] object-contain" />
+                    <img :src="sk.img" alt="" class="max-w-[70%] max-h-[70%] object-contain" /> 
                     </div>
                     <h2 class="">{{ sk.name }}</h2>   
                 </div>
                 
             </div> 
-            </div>
-            <div class="flex justify-center pt-[1rem]">
-                <button class="w-[13rem] h-[2.5rem] bg-[#f4f4f4] text-[#263238] text-[1rem] rounded-xl cursor-pointer items-center justify-center flex gap-3">VIEW ALL <img src="../../assets/images/arrow-right.svg" alt=""></button>
-            </div>
-                
+            </Motion>
+            <Motion is="div" preset="slideVisibleBottom" :duration="1000" class="flex justify-center pt-[1rem]">
+                <Motion is="button" preset="slideVisibleRight" :duration="1500" class="w-[13rem] h-[2.5rem] bg-[#f4f4f4] text-[#263238] text-[1rem] rounded-xl cursor-pointer items-center justify-center flex gap-3">VIEW ALL <img src="../../assets/images/arrow-right.svg" alt=""></Motion>
+            </Motion> 
                 
             </div>
 </template>
