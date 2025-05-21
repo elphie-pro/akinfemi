@@ -7,3 +7,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ComicNeueSansID';
+  src: url('@/assets/fonts/ComicNeueSansID.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'Comic Sans MS';
+}
