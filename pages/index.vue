@@ -9,9 +9,9 @@
 </template>
 
 <script setup>
-import Background from './components/Background.vue';
-import Heading from './components/Home/Heading.vue'
-import Skills from './components/Home/Skills.vue'
+import Background from '../components/Background.vue';
+import Heading from '../components/Home/Heading.vue'
+import Skills from '../components/Home/Skills.vue'
 
 
 </script>

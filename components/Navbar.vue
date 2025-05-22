@@ -8,11 +8,11 @@
                         <li :class="pathname === '/' ? 'w-[5rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
                             <NuxtLink href="/">Home</NuxtLink>
                         </li>
-                        <li :class="pathname === '/dd' ? 'w-[7rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
-                            <NuxtLink href="/">Projects</NuxtLink>
+                        <li :class="pathname === '/projects' ? 'w-[7rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
+                            <NuxtLink href="/projects">Projects</NuxtLink>
                         </li>
-                        <li :class="pathname === '/d' ? 'w-[8rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
-                            <NuxtLink href="/">About Us</NuxtLink>
+                        <li :class="pathname === '/about' ? 'w-[8rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
+                            <NuxtLink href="/about">About Us</NuxtLink>
                         </li>
                     </ul>
                 </div>
