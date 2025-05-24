@@ -1,8 +1,9 @@
 <template>
+    <Head><Title>Akinfemi || Projects</Title></Head>
     <div class="bg-[#263238] h-screen w-screen overflow-hidden">
         <Navbar />
         <Background />
-        <Projects />
+        <Project />
     </div>
 </template>
 

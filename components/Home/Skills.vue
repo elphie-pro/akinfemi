@@ -28,7 +28,7 @@
 import { useRouter } from 'vue-router';
 
 const route = useRouter() 
-const images = import.meta.glob('../../assets/images/*', { eager: true, as: 'url' })
+const images = import.meta.glob('../../assets/images/*', { eager: true, query: '?url', import: 'default' })
 
 const about = () => {
     route.push('/about')

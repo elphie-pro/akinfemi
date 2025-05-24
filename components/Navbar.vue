@@ -6,13 +6,13 @@
                 <div class=" text-xl">
                     <ul class="flex gap-[4rem]">
                         <li :class="pathname === '/' ? 'w-[5rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
-                            <NuxtLink href="/">Home</NuxtLink>
+                            <NuxtLink to="/">Home</NuxtLink>
                         </li>
                         <li :class="pathname === '/projects' ? 'w-[7rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
-                            <NuxtLink href="/projects">Projects</NuxtLink>
+                            <NuxtLink to="/projects">Projects</NuxtLink>
                         </li>
                         <li :class="pathname === '/about' ? 'w-[8rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
-                            <NuxtLink href="/about">About Us</NuxtLink>
+                            <NuxtLink to="/about">About Us</NuxtLink>
                         </li>
                     </ul>
                 </div>

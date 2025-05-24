@@ -12,7 +12,7 @@
                 </div>
                 <div class="flex justify-between items-center">
                 <h2>Description:</h2>
-                <p class="text-[.8rem] w-[16rem]">{{ project.description }}</p>
+                <p class="text-[.8rem] w-[16rem]">{{ project.descript }}</p>
                 </div>
                 <div class="flex justify-between">
                     <NuxtLink :to="project.site" @click.stop class="flex items-center gap-2 text-[#b1afaf]">View Live Site <img src="../assets/images/send-sqaure-2.svg" alt="" class="w-[1.5rem]"></NuxtLink>
@@ -31,7 +31,8 @@
 import { NuxtImg, Title } from '#components';
 
 const show = ref(false)
-const images = import.meta.glob('../assets/images/*', { eager: true, as: 'url' })
+const images = import.meta.glob('../assets/images/*', { eager: true, query: '?url', import: 'default' })
+
 
 
 const projects = [
@@ -39,7 +40,7 @@ const projects = [
         title: 'ElphBlog',
         img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
-        description: 'ElphBank is a makeshift banking site... Read more',
+        descript: 'ElphBank is a makeshift banking site... Read more',
         site:'https://elph-blog.vercel.app/',
         code: 'https://github.com/elphie-pro/ElphBlog'
     }
