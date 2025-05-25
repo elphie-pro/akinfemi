@@ -1,7 +1,8 @@
 <template>
-    <div class="w-full block max-w-[90rem] mx-auto px-4 py-6  overflow-hidden text-[#f4f4f4]  ">
+    <div class="w-full block max-w-[90rem] mx-auto px-4 py-6  overflow-x-hidden text-[#f4f4f4]  ">
         <h2 class="text-center text-[2.5rem]" style="font-family: 'Cakecafe';">My Recent Projects</h2>
-        <div v-for="project in projects" :key="project.name">
+        <div class="grid grid-cols-3">
+             <div v-for="project in projects" :key="project.name">
                 <SpotlightCard  class="my-4 w-[28rem] h-[30rem] text-white border-white border-8 " style="background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);" spotlightColor="rgba(200, 200, 255, .8)" @click = "show = true">
             <div class="flex flex-col gap-5">
                 <img :src="project.img" class="w-full"/>
@@ -24,6 +25,7 @@
                     <p>2 fished</p>
                 </div>
         </div>
+        </div>
     </div>
 </template>
 
@@ -43,7 +45,32 @@ const projects = [
         descript: 'ElphBank is a makeshift banking site... Read more',
         site:'https://elph-blog.vercel.app/',
         code: 'https://github.com/elphie-pro/ElphBlog'
-    }
+    },
+    {
+        title: 'ElphBlog',
+        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
+        descript: 'ElphBank is a makeshift banking site... Read more',
+        site:'https://elph-blog.vercel.app/',
+        code: 'https://github.com/elphie-pro/ElphBlog'
+    },
+    {
+        title: 'ElphBlog',
+        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
+        descript: 'ElphBank is a makeshift banking site... Read more',
+        site:'https://elph-blog.vercel.app/',
+        code: 'https://github.com/elphie-pro/ElphBlog'
+    },
+    {
+        title: 'ElphBlog',
+        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
+        descript: 'ElphBank is a makeshift banking site... Read more',
+        site:'https://elph-blog.vercel.app/',
+        code: 'https://github.com/elphie-pro/ElphBlog'
+    },
+    
 ]
 
 </script>

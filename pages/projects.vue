@@ -1,6 +1,6 @@
 <template>
     <Head><Title>Akinfemi || Projects</Title></Head>
-    <div class="bg-[#263238] h-screen w-screen overflow-hidden">
+    <div class="bg-[#263238] h-screen w-screen overflow-x-hidden">
         <Navbar />
         <Background />
         <Project />
