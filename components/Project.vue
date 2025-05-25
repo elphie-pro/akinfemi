@@ -70,7 +70,38 @@ const projects = [
         site:'https://elph-blog.vercel.app/',
         code: 'https://github.com/elphie-pro/ElphBlog'
     },
-    
+    {
+        title: 'ElphBlog',
+        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
+        descript: 'ElphBank is a makeshift banking site... Read more',
+        site:'https://elph-blog.vercel.app/',
+        code: 'https://github.com/elphie-pro/ElphBlog'
+    },
+    {
+        title: 'ElphBlog',
+        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
+        descript: 'ElphBank is a makeshift banking site... Read more',
+        site:'https://elph-blog.vercel.app/',
+        code: 'https://github.com/elphie-pro/ElphBlog'
+    },
+    {
+        title: 'ElphBlog',
+        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
+        descript: 'ElphBank is a makeshift banking site... Read more',
+        site:'https://elph-blog.vercel.app/',
+        code: 'https://github.com/elphie-pro/ElphBlog'
+    },
+    {
+        title: 'ElphBlog',
+        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
+        descript: 'ElphBank is a makeshift banking site... Read more',
+        site:'https://elph-blog.vercel.app/',
+        code: 'https://github.com/elphie-pro/ElphBlog'
+    }
 ]
 
 </script>
