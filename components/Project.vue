@@ -16,7 +16,7 @@
                 <p class="text-[.8rem] w-[16rem]">{{ pj.descript }}</p>
                 </div>
                 <div class="flex justify-between">
-                    <NuxtLink :to="pj.site" @click.stop class="flex items-center gap-2 text-[#b1afaf]">View Live Site <img src="../assets/images/send-sqaure-2.svg" alt="" class="w-[1.5rem]"></NuxtLink>
+                    <NuxtLink :to="pj.site" @click.stop :class="pj.site === '' ? 'flex items-center gap-2 text-[#b1afaf] line-through' : 'flex items-center gap-2 text-[#b1afaf]'">View Live Site <img src="../assets/images/send-sqaure-2.svg" alt="" class="w-[1.5rem]"></NuxtLink>
                     <NuxtLink :to="pj.code" @click.stop class="flex items-center gap-2 text-[#b1afaf]">View Code <img src="../assets/images/mdi_github grey.svg" alt="" class="w-[1.5rem]"></NuxtLink>
                 </div> 
             </div>
@@ -43,7 +43,7 @@ const projects = [
         img: images['../assets/images/Screenshot 2025-05-26 190840.png'],
         stack: 'Nuxt.JS, JavaScript, Tailwind CSS, Vueuse Motion',
         descript: 'Akinfemi V1 is a portfolio website... Read more',
-        site:'https://elph-blog.vercel.app/',
+        site:'',
         code: 'https://github.com/elphie-pro/akinfemi'
     },
     {
@@ -59,7 +59,7 @@ const projects = [
         img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
         stack: 'React.JS, JavaScript, CSS, Firebase Auth, Firestore',
         descript: 'ElphBlog is a blogging website that allows... Read more',
-        site:'',
+        site:'https://elph-blog.vercel.app/',
         code: 'https://github.com/elphie-pro/ElphBlog'
     },
     {
