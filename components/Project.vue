@@ -21,7 +21,7 @@
                 </div> 
             </div>
             </SpotlightCard>
-                <div v-if="show" class="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
+                <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
                     <p>2 fished</p>
                 </div>
         </div>
@@ -42,7 +42,7 @@ const projects = [
         title: 'Akinfemi V1',
         img: images['../assets/images/Screenshot 2025-05-26 190840.png'],
         stack: 'Nuxt.JS, JavaScript, Tailwind CSS, Vueuse Motion',
-        descript: 'ElphBank is a makeshift banking site... Read more',
+        descript: 'Akinfemi V1 is a portfolio website... Read more',
         site:'https://elph-blog.vercel.app/',
         code: 'https://github.com/elphie-pro/akinfemi'
     },
@@ -71,32 +71,24 @@ const projects = [
         code: 'https://github.com/elphie-pro/ElphBlog'
     },
     {
-        title: 'ElphBlog',
-        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        title: 'Currency Converter',
+        img: images['../assets/images/Screenshot 2025-05-26 194158.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site... Read more',
         site:'https://elph-blog.vercel.app/',
         code: 'https://github.com/elphie-pro/ElphBlog'
     },
     {
-        title: 'ElphBlog',
-        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        title: 'Weather App',
+        img: images['../assets/images/Screenshot 2025-05-26 193925.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site... Read more',
         site:'https://elph-blog.vercel.app/',
         code: 'https://github.com/elphie-pro/ElphBlog'
     },
     {
-        title: 'ElphBlog',
-        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
-        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
-        descript: 'ElphBank is a makeshift banking site... Read more',
-        site:'https://elph-blog.vercel.app/',
-        code: 'https://github.com/elphie-pro/ElphBlog'
-    },
-    {
-        title: 'ElphBlog',
-        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        title: 'Todo App V1',
+        img: images['../assets/images/Screenshot 2025-05-26 193850.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site... Read more',
         site:'https://elph-blog.vercel.app/',
