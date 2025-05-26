@@ -63,36 +63,36 @@ const projects = [
         code: 'https://github.com/elphie-pro/ElphBlog'
     },
     {
-        title: 'ElphBlog',
-        img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
+        title: 'Pay4Me UI',
+        img: images['../assets/images/Screenshot 2025-05-26 194523.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site... Read more',
-        site:'https://elph-blog.vercel.app/',
-        code: 'https://github.com/elphie-pro/ElphBlog'
+        site:'',
+        code: 'https://github.com/elphie-pro/Pay4Me-UI'
     },
     {
         title: 'Currency Converter',
         img: images['../assets/images/Screenshot 2025-05-26 194158.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site... Read more',
-        site:'https://elph-blog.vercel.app/',
-        code: 'https://github.com/elphie-pro/ElphBlog'
+        site:'https://currency-converter-olive-xi.vercel.app/',
+        code: 'https://github.com/elphie-pro/Currency-Converter'
     },
     {
         title: 'Weather App',
         img: images['../assets/images/Screenshot 2025-05-26 193925.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site... Read more',
-        site:'https://elph-blog.vercel.app/',
-        code: 'https://github.com/elphie-pro/ElphBlog'
+        site:'https://weather-app-eight-chi-89.vercel.app/',
+        code: 'https://github.com/elphie-pro/Todo-App'
     },
     {
         title: 'Todo App V1',
         img: images['../assets/images/Screenshot 2025-05-26 193850.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site... Read more',
-        site:'https://elph-blog.vercel.app/',
-        code: 'https://github.com/elphie-pro/ElphBlog'
+        site:'https://todo-app-tan-pi.vercel.app/',
+        code: 'https://github.com/elphie-pro/Todo-App'
     }
 ]
 
