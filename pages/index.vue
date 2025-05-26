@@ -13,5 +13,6 @@ import Background from '../components/Background.vue';
 import Heading from '../components/Home/Heading.vue'
 import Skills from '../components/Home/Skills.vue'
 
+const router = useRouter()
 
 </script>

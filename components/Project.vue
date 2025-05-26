@@ -1,23 +1,23 @@
 <template>
     <div class="w-full block max-w-[90rem] mx-auto px-4 py-6  overflow-x-hidden text-[#f4f4f4]  ">
-        <h2 class="text-center text-[2.5rem]" style="font-family: 'Cakecafe';">My Recent Projects</h2>
+        <h2 class="text-center text-[2.5rem]" style="font-family: 'Cakecafe';">My Recent pjs</h2>
         <div class="grid grid-cols-3">
-             <div v-for="project in projects" :key="project.name">
+             <div v-for="pj in projects" :key="pj.name">
                 <SpotlightCard  class="my-4 w-[28rem] h-[30rem] text-white border-white border-8 " style="background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);" spotlightColor="rgba(200, 200, 255, .8)" @click = "show = true">
             <div class="flex flex-col gap-5">
-                <img :src="project.img" class="w-full"/>
-                <h1 class="font-custom text-[2rem] text-[#f4f4f4]">{{ project.title }}</h1>
+                <img :src="pj.img" class="w-full"/>
+                <h1 class="font-custom text-[2rem] text-[#f4f4f4]">{{ pj.title }}</h1>
                 <div class="flex justify-between items-center">
                 <h2>Tech Stack:</h2>
-                <p class="text-[.8rem] w-[16rem]">{{ project.stack }}</p>
+                <p class="text-[.8rem] w-[16rem]">{{ pj.stack }}</p>
                 </div>
                 <div class="flex justify-between items-center">
                 <h2>Description:</h2>
-                <p class="text-[.8rem] w-[16rem]">{{ project.descript }}</p>
+                <p class="text-[.8rem] w-[16rem]">{{ pj.descript }}</p>
                 </div>
                 <div class="flex justify-between">
-                    <NuxtLink :to="project.site" @click.stop class="flex items-center gap-2 text-[#b1afaf]">View Live Site <img src="../assets/images/send-sqaure-2.svg" alt="" class="w-[1.5rem]"></NuxtLink>
-                    <NuxtLink :to="project.code" @click.stop class="flex items-center gap-2 text-[#b1afaf]">View Code <img src="../assets/images/mdi_github grey.svg" alt="" class="w-[1.5rem]"></NuxtLink>
+                    <NuxtLink :to="pj.site" @click.stop class="flex items-center gap-2 text-[#b1afaf]">View Live Site <img src="../assets/images/send-sqaure-2.svg" alt="" class="w-[1.5rem]"></NuxtLink>
+                    <NuxtLink :to="pj.code" @click.stop class="flex items-center gap-2 text-[#b1afaf]">View Code <img src="../assets/images/mdi_github grey.svg" alt="" class="w-[1.5rem]"></NuxtLink>
                 </div> 
             </div>
             </SpotlightCard>
