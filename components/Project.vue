@@ -22,9 +22,9 @@
             </div>
             </SpotlightCard>
                 <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
-                    <div class="bg-[#263238]/40 w-[89rem] h-[50rem] ml-[-1rem] " @click.stop>
-                        <h2>{{ selectedProject?.title }}</h2>
-
+                    <div class="bg-[#263238]/40 w-[89rem] h-auto ml-[-1rem] p-8" @click.stop>
+                         <h2>{{ selectedProject.stackImages[0] }}</h2>
+                         <h2>{{ selectedProject.title }}</h2>
                     </div>
                 </div>
         </div>
@@ -51,7 +51,13 @@ const projects = [
         stack: 'Nuxt.JS, JavaScript, Tailwind CSS, Vueuse Motion',
         descript: 'Akinfemi V1 is a portfolio website... Read more',
         site:'',
-        code: 'https://github.com/elphie-pro/akinfemi'
+        code: 'https://github.com/elphie-pro/akinfemi',
+        stackImages: [
+            {
+                name: 'yams dawg',
+                age:'14'
+            }
+        ]
     },
     {
         title: 'ElphBank',
@@ -59,7 +65,12 @@ const projects = [
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site... Read more',
         site:'',
-        code: 'https://github.com/elphie-pro/ElphBank'
+        code: 'https://github.com/elphie-pro/ElphBank',
+         stackImages: [
+            {
+                name: 'yams dawg'
+            }
+        ]
     },
     {
         title: 'ElphBlog V1',
