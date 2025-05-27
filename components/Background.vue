@@ -6,9 +6,9 @@
         <div class="md:w-[6rem] w-[4rem] md:fixed absolute">
             <div class="flex flex-col gap-4 items-center">
                 <div class="w-[.1rem] md:h-[8rem] h-[4rem] bg-[#000] lg:mt-[5rem] md:mt-[12rem] mt-[9rem]"></div>
-                <NuxtLink href="https://github.com/elphie-pro"><img src="../assets/images/mdi_github.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
-                <NuxtLink href=""><img src="../assets/images/mdi_twitter.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
-                <NuxtLink href="https://www.linkedin.com/in/akinfemi-onadeko-5b0b852a6/"><img src="../assets/images/devicon_linkedin.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
+                <NuxtLink to="https://github.com/elphie-pro"><img src="../assets/images/mdi_github.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
+                <NuxtLink to="https://x.com/DevElphie"><img src="../assets/images/mdi_twitter.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
+                <NuxtLink to="https://www.linkedin.com/in/akinfemi-onadeko-5b0b852a6/"><img src="../assets/images/devicon_linkedin.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
                 <div class="w-[.1rem] md:h-[8rem] h-[4rem] bg-[#000] mt-[rem] "></div>
             </div>
         </div>

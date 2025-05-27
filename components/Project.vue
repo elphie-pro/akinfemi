@@ -3,7 +3,7 @@
         <h2 class="text-center text-[2.5rem]" style="font-family: 'Cakecafe';">My Recent Projects</h2>
         <div class="grid grid-cols-3">
              <div v-for="pj in projects" :key="pj.name">
-                <SpotlightCard  class="my-4 w-[28rem] h-[30rem] text-white border-white border-8 " style="background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);" spotlightColor="rgba(200, 200, 255, .8)" @click = "show = true">
+                <SpotlightCard  class="my-4 w-[28rem] h-[30rem] text-white border-white border-8 " style="background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
             <div class="flex flex-col gap-4">
                 <img :src="pj.img" class="w-full"/>
                 <h1 class="font-custom text-[2rem] text-[#f4f4f4] font-black">{{ pj.title }}</h1>
@@ -22,7 +22,10 @@
             </div>
             </SpotlightCard>
                 <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
-                    <p>2 fished</p>
+                    <div class="bg-[#263238]/40 w-[89rem] h-[50rem] ml-[-1rem] " @click.stop>
+                        <h2>{{ selectedProject?.title }}</h2>
+
+                    </div>
                 </div>
         </div>
         </div>
@@ -33,9 +36,13 @@
 import { NuxtImg, Title } from '#components';
 
 const show = ref(false)
+const selectedProject = ref(null)
 const images = import.meta.glob('../assets/images/*', { eager: true, query: '?url', import: 'default' })
 
-
+const openModal = (projects) => {
+    selectedProject.value = projects
+    show.value = true
+}
 
 const projects = [
     {
