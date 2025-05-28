@@ -23,8 +23,7 @@
             </SpotlightCard>
                 <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
                     <div class="bg-[#263238]/40 w-[89rem] h-auto ml-[-1rem] p-8" @click.stop>
-                         <h2>{{ selectedProject.stackImages[0] }}</h2>
-                         <h2>{{ selectedProject.title }}</h2>
+                        
                     </div>
                 </div>
         </div>
@@ -54,8 +53,7 @@ const projects = [
         code: 'https://github.com/elphie-pro/akinfemi',
         stackImages: [
             {
-                name: 'yams dawg',
-                age:'14'
+                soruce: [images['../assets/images/Screenshot 2025-05-26 190840.png'], images['../assets//images/devicon_linkedin.svg']]
             }
         ]
     },
