@@ -1,16 +1,16 @@
 <template>
     <div class="w-full block lg:max-w-[80rem] md:max-w-[45rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4] lg:mt-[-2rem] mt-[1rem]">
-            <div v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200" :duration="1200" class="flex gap-4 items-center" >
-                <Motion is="div" preset="slideVisibleLeft" :duration="1600" class="w-[8rem] md:h-[.1rem] h-[.1rem] bg-[#f4f4f4] "></Motion> 
-                <Motion is="p" preset="slideVisibleTop" :duration="1400" class="text-[2.3rem]">Skills</Motion>
-                <Motion is="div" preset="slideVisibleRight" :duration="2000" class="w-[8rem] md:h-[.1rem] h-[.1rem] bg-[#f4f4f4] mt-[rem] "></Motion>
+            <div v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200" :duration="1200" class="flex gap-4 items-center justify-end md:justify-start" >
+                <Motion is="div" preset="slideVisibleLeft" :duration="1600" class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] bg-[#f4f4f4] "></Motion> 
+                <Motion is="p" preset="slideVisibleTop" :duration="1400" class="md:text-[2.3rem] text-[1.3rem]">Skills</Motion>
+                <Motion is="div" preset="slideVisibleRight" :duration="2000" class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] bg-[#f4f4f4] mt-[rem] "></Motion>
             </div>
         
-            <Motion is="div" preset="slideVisibleBottom" :duration="1000" class="grid grid-cols-5 gap-4 p-4 "> 
+            <Motion is="div" preset="slideVisibleBottom" :duration="1000" class="grid grid-cols-3 md:grid-cols-5 gap-4 p-4 "> 
             <div v-for="sk in Skills.slice(0,10)" :key="sk.name" class="flex flex-col gap-3 text-center">
                 <div class="flex flex-col gap-3 justify-center items-center">
-                    <div class="w-[7rem] h-[7rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
-                    <img :src="sk.img" alt="" class="max-w-[70%] max-h-[70%] object-contain" /> 
+                    <div class="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
+                    <img :src="sk.img" alt="" class="max-w-[50%] max-h-[50%] md:max-w-[70%] md:max-h-[70%] object-contain" /> 
                     </div>
                     <h2 class="">{{ sk.name }}</h2>   
                 </div> 

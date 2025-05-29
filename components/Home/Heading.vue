@@ -15,9 +15,9 @@
             <Motion is="p" preset="slideVisibleBottom" :duration="1200" >UI/UX Designer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1400" >Photographer </Motion> 
         </div>
-      <motion  is="div" preset="slideVisibleBottom" :duration="1800" class="flex flex-col gap-7 md:flex-row pt-[2.5rem] justify-center">
-        <motion  is="button" preset="slideVisibleLeft" :duration="2000" class="w-[10rem] h-[2.5rem] bg-[#f4f4f4] text-[#263238] text-[1.2rem] rounded-2xl cursor-pointer">Contact Me</motion>
-        <motion  is="button" preset="slideVisibleRight" :duration="2000" class="w-[10rem] h-[2.5rem] border-[#f4f4f4] text-[#f4f4f4] border text-[1.2rem] rounded-2xl cursor-pointer">My Resume</motion>
+      <motion  is="div" preset="slideVisibleBottom" :duration="1800" class="flex gap-7 md:flex-row pt-[2.5rem] justify-center">
+        <motion  is="button" preset="slideVisibleLeft" :duration="2000" class="md:w-[10rem] md:h-[2.5rem] w-[7rem] h-[2.5rem] bg-[#f4f4f4] text-[#263238] text-[1rem] md:text-[1.2rem] rounded-xl md:rounded-2xl cursor-pointer">Contact Me</motion>
+        <motion  is="button" preset="slideVisibleRight" :duration="2000" class="md:w-[10rem] md:h-[2.5rem] w-[7rem] h-[2.5rem] border-[#f4f4f4] text-[#f4f4f4] border text-[1rem] md:text-[1.2rem] rounded-xl md:rounded-2xl cursor-pointer">My Resume</motion>
       </motion>
     </div>
 </template>
