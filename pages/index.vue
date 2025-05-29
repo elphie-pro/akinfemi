@@ -1,6 +1,6 @@
 <template>
   <Head><Title>Akinfemi</Title></Head>
-  <div class="bg-[#263238] h-screen w-screen overflow-hidden pb-0">
+  <div class="bg-[#263238] h-screen w-screen overflow-y-hidden pb-0">
     <Navbar />
     <Background />
     <Heading />
