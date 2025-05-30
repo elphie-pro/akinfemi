@@ -23,22 +23,32 @@
             </SpotlightCard>
                 <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
                     <div class="bg-[#263238]/40 w-[89rem] h-auto ml-[-1rem] p-8 flex justify-between" @click.stop>
-                        <div>
-                         <h2>{{ selectedProject.title }}</h2>
-
+                        <div class="flex flex-col gap-5">
+                            <div class="flex gap-8 items-center">
+                                <h2 class="text-[1.3rem]">Project Title:</h2>
+                                 <h2 class="text-[2rem]">{{ selectedProject.title }}</h2>
+                            </div>
+                            <div>
+                                    <h2 class="1.3rem">Tech Stack: </h2>
+                                    <div class="grid grid-cols-3 md:grid-cols-5 gap-4 p-4">
+                                       <div v-for="sk in selectedProject.stackImages" :key="sk.name" class="flex flex-col gap-3 text-center">
+                                            <div class="flex flex-col gap-3 justify-center items-center">
+                                                <div class="w-[7rem] h-[7rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
+                                                <img :src="sk.source" alt="" class="max-w-[70%] max-h-[70%] object-contain" /> 
+                                                </div>
+                                                <h2 class="">{{ sk.name }}</h2>   
+                                            </div> 
+                                        </div>  
+                                    </div>
+                                    
+                                 </div> 
                         </div>
-                        <div class="flex flex-col">
+                        <div class="flex flex-col w-[50rem] gap-5">
                             <img :src="selectedProject.img" class="w-[50rem]"/>
-
+                            <h3 class="text-[1.5rem] underline">Description:</h3>
+                            <h2 class="text-[1.3rem]"> {{ selectedProject.description }} </h2>
                         </div>
-                        <!-- <div v-for="sk in selectedProject.stackImages" :key="sk.name" class="flex flex-col gap-3 text-center">
-                            <div class="flex flex-col gap-3 justify-center items-center">
-                                <div class="w-[7rem] h-[7rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
-                                <img :src="sk.source" alt="" class="max-w-[70%] max-h-[70%] object-contain" /> 
-                                </div>
-                                <h2 class="">{{ sk.name }}</h2>   
-                            </div> 
-                        </div>  -->
+                        
                     </div>
                 </div>
         </div>
@@ -64,6 +74,7 @@ const projects = [
         img: images['../assets/images/Screenshot 2025-05-26 190840.png'],
         stack: 'Nuxt.JS, JavaScript, Tailwind CSS, Vueuse Motion',
         descript: 'Akinfemi V1 is a portfolio website... Read more',
+        description:'The Akinfemi project is a modern portfolio website built with Nuxt.js 3 that showcases personal projects and technical skills through an interactive, animated interface featuring a project gallery with Project.vue:6 SpotlightCard components that display seven different applications including "Akinfemi V1", "ElphBank", "ElphBlog V1", and others Project.vue:61-133 , sophisticated text animations through the DecryptedText.vue:77-81 DecryptedText component with character-by-character decryption effects, a responsive navigation system with Navbar.vue:8-16 route-aware styling, and a component-driven architecture that follows Nuxt.js file-based routing conventions with modular components for spotlight cards, animated text, and project displays, all built using Vue.js 3, Tailwind CSS, and @vueuse/motion for animations with server-side rendering capabilities.',
         site:'',
         code: 'https://github.com/elphie-pro/akinfemi',
         stackImages: [
