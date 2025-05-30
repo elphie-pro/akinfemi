@@ -22,16 +22,23 @@
             </div>
             </SpotlightCard>
                 <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
-                    <div class="bg-[#263238]/40 w-[89rem] h-auto ml-[-1rem] p-8" @click.stop>
-                        <div v-for="sk in selectedProject.stackImages" :key="sk.name" class="flex flex-col gap-3 text-center">
+                    <div class="bg-[#263238]/40 w-[89rem] h-auto ml-[-1rem] p-8 flex justify-between" @click.stop>
+                        <div>
+                         <h2>{{ selectedProject.title }}</h2>
+
+                        </div>
+                        <div class="flex flex-col">
+                            <img :src="selectedProject.img" class="w-[50rem]"/>
+
+                        </div>
+                        <!-- <div v-for="sk in selectedProject.stackImages" :key="sk.name" class="flex flex-col gap-3 text-center">
                             <div class="flex flex-col gap-3 justify-center items-center">
                                 <div class="w-[7rem] h-[7rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
                                 <img :src="sk.source" alt="" class="max-w-[70%] max-h-[70%] object-contain" /> 
                                 </div>
                                 <h2 class="">{{ sk.name }}</h2>   
                             </div> 
-                        </div> 
-                         <h2>{{ selectedProject.title }}</h2>
+                        </div>  -->
                     </div>
                 </div>
         </div>
