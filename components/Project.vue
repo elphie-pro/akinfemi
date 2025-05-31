@@ -79,8 +79,8 @@ const projects = [
         code: 'https://github.com/elphie-pro/akinfemi',
         stackImages: [
             {
-                name: 'LInked',
-                source:  images['../assets/images/devicon_linkedin.svg']
+                name: 'Vue Js',
+                source:  images['../../assets/images/logos_vue.svg']
             },
             {
                 name: 'LInked',
