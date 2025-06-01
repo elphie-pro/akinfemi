@@ -29,7 +29,7 @@
                                  <h2 class="text-[2rem]">{{ selectedProject.title }}</h2>
                             </div>
                             <div>
-                                    <h2 class="1.3rem">Tech Stack: </h2>
+                                    <h2 class="text-[1.3rem]">Tech Stack: </h2>
                                     <div class="grid grid-cols-3 md:grid-cols-5 gap-4 p-4">
                                        <div v-for="sk in selectedProject.stackImages" :key="sk.name" class="flex flex-col gap-3 text-center">
                                             <div class="flex flex-col gap-3 justify-center items-center">
@@ -80,7 +80,7 @@ const projects = [
         stackImages: [
             {
                 name: 'Vue Js',
-                source:  images['../../assets/images/logos_vue.svg']
+                source:  images['../assets/images/logos_vue.svg']
             },
             {
                 name: 'LInked',
