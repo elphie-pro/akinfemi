@@ -30,9 +30,6 @@
                 </div> 
             </div> 
             </Motion>
-            <div v-motion :initial="{ x: 100, y: 100, opacity: 0 }" :enter="{ x: 0, y: 0, opacity: 1 }" :variants="{ custom: { scale: 2 } }" :delay="300" :duration="2000" class="flex justify-center pt-[1rem]">
-                <button :duration="1500" @click="about"  class="w-[13rem] h-[2.5rem] bg-[#f4f4f4] text-[#263238] text-[1rem] rounded-xl cursor-pointer items-center justify-center flex gap-3" >VIEW ALL <img src="../../assets/images/arrow-right.svg" alt=""></button> 
-            </div>  
                 
             </div>
     </div>
@@ -90,27 +87,27 @@ const about = () => {
             img: images['../assets/images/devicon_photoshop.svg']
         },
         {
-            name: 'HTML',
-            img: images['../assets/images/Vector.svg']
+            name: 'Firebase',
+            img: images['../assets/images/devicon_firebase.svg']
         },
         {
-            name: 'HTML',
-            img: images['../assets/images/Vector.svg']
+            name: 'NPM',
+            img: images['../assets/images/logos_npm-icon.svg']
         },
         {
-            name: 'HTML',
-            img: images['../assets/images/Vector.svg']
+            name: 'Vercel',
+            img: images['../assets/images/skill-icons_vercel-dark.svg']
         },
         {
-            name: 'HTML',
-            img: images['../assets/images/Vector.svg']
+            name: 'Vite',
+            img: images['../assets/images/vscode-icons_file-type-vite.svg']
         },
         {
-            name: 'HTML',
+            name: 'Git',
             img: images['../assets/images/devicon_git.svg']
         },
         {
-            name: 'HTML',
+            name: 'Framer Motion',
             img: images['../assets/images/framer 1.svg']
         },
     ]
