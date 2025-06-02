@@ -17,4 +17,13 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  nitro: {
+    publicAssets: [
+      {
+        baseURL: '/fonts',
+        dir: 'public/fonts',
+        maxAge: 60 * 60 * 24 * 365 // 1 year
+      }
+    ]
+  }
 })

@@ -2,17 +2,11 @@
 
 @font-face {
   font-family: 'Cakecafe';
-  src: url('@/assets/fonts/Cakecafe.ttf') format('ttf');
+  src: url('@/public/fonts/Cakecafe.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'ComicNeueSansID';
-  src: url('@/assets/fonts/ComicNeueSansID.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
 
 body{
   font-family: 'Comic Sans MS';
