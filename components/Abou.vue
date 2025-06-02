@@ -1,8 +1,11 @@
 <template>
+    <head>
+        <title>Akinfemi || About</title>
+    </head>
     <div class="w-full block max-w-[80rem] mx-auto px-4 py-6  overflow-x-hidden text-[#f4f4f4]  ">
         <h2 class="text-center text-[3.5rem]" style="font-family: 'Cakecafe';">Who is Akinfemi?</h2>
 
-        <div class="flex justify-between pt-[2rem]">
+        <div class="flex justify-between pt-[1rem]">
             <div class="justify-center items-center w-[35rem] pt-[9rem]">
                 <h1 class="text-center text-[3.5rem]" style="font-family: 'Cakecafe';">“The only way to do great work to to love what you do”</h1>
             </div>
