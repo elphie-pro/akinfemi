@@ -12,7 +12,7 @@
                             <NuxtLink to="/projects">Projects</NuxtLink>
                         </li>
                         <li :class="pathname === '/about' ? 'w-[8rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
-                            <NuxtLink to="/about">About Us</NuxtLink>
+                            <NuxtLink to="/about">About Me</NuxtLink>
                         </li>
                     </ul>
                 </div>
