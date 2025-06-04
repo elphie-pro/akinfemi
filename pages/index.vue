@@ -1,5 +1,9 @@
 <template>
-  <Head><Title>Akinfemi</Title></Head>
+  <Head>
+      <Title>Akinfemi</Title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </Head>
+
   <div class="bg-[#263238] lg:h-screen h-full md:h-screen w-screen overflow-y-hidden pb-0">
     <Navbar />
     <Background />
