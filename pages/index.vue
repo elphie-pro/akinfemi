@@ -4,7 +4,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </Head>
 
-  <div class="bg-[#263238] lg:h-screen h-full md:h-screen w-screen overflow-x-hidden pb-0">
+  <div class="bg-[#263238] scale-90 lg:min-h-screen h-full md:min-h-screen w-screen overflow-x-hidden pb-0">
     <Navbar />
     <Background />
     <Heading />
