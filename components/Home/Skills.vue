@@ -6,7 +6,7 @@
                 <Motion is="div" preset="slideVisibleRight" :duration="2000" class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] bg-[#f4f4f4] mt-[rem] "></Motion>
             </div>
         
-            <Motion is="div" preset="slideVisibleBottom" :duration="1000" class="grid grid-cols-3 md:grid-cols-5 gap-4 p-4 "> 
+            <Motion is="div" preset="slideVisibleBottom" :duration="1000" class="grid grid-cols-3 md:grid-cols-5 gap-4 p-4 ml-[3rem]"> 
             <div v-for="sk in Skills.slice(0,10)" :key="sk.name" class="flex flex-col gap-3 text-center">
                 <div class="flex flex-col gap-3 justify-center items-center">
                     <div class="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
