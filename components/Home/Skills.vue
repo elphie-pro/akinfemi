@@ -13,6 +13,7 @@
                     <img :src="sk.img" alt="" class="max-w-[50%] max-h-[50%] md:max-w-[70%] md:max-h-[70%] object-contain" /> 
                     </div>
                     <h2 class="">{{ sk.name }}</h2>   
+                    <h2 class="">{{ sk.name }} + Exactly</h2>   
                 </div> 
             </div> 
             </Motion>
