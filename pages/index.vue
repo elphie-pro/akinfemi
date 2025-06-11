@@ -7,13 +7,11 @@
     />
   </Head>
 
-  <div
-    class="bg-[#263238] lg:min-h-screen min-h-screen md:min-h-screen overflow-x-hidden"
-  >
-    <Navbar />
-    <Background />
-    <Heading />
-    <Skills />
+  <div class="bg-[#263238] lg:min-h-screen min-h-screen md:min-h-screen overflow-x-hidden ">
+      <Navbar />
+      <Background />
+      <Heading />
+      <Skills />
   </div>
 </template>
 
