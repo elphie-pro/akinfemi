@@ -1,8 +1,9 @@
 <template>
-    <div class="w-full block lg:max-w-[80rem] md:max-w-[45rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4] md:mt-[3rem] lg:mt-auto">
+    <div class="w-full block lg:min-w-[80rem] md:min-w-[45rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4] md:mt-[3rem] lg:mt-auto">
          <h1>
       <DecryptedText
-        text="Hi, I'm Onadeko Akinfemi Raphael"
+        text="Hi, I'm Onadeko Akinfemi 
+Raphael"
         animate-on="view"
         class-name="text-[#f4f4f4] md:text-[3rem] lg:text-[5rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-bold text-center leading-tight"
         encrypted-class-name="text-[#f4f4f4] md:text-[3.5rem] lg:text-[5rem] sm:text-[1rem]"
