@@ -22,3 +22,33 @@ html {
 body{
   font-family: 'Comic Sans MS';
 }
+
+::-webkit-scrollbar {
+    width: .8rem;
+    
+  }
+  
+::-webkit-scrollbar-thumb {
+    content: "";
+    width: 15px;
+    height: 135px;
+    opacity: 0.4;
+    background: #888;
+    position: absolute;
+    top: 5px;
+    right: -17px;
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    cursor: grab;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;    
+    opacity: 0.6;
+  }
+
+::-webkit-scrollbar-thumb:active:hover {
+    background: #555;    
+    opacity: 0.6;          
+    cursor: grabbing;
+  }
