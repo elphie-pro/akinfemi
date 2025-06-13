@@ -1,16 +1,16 @@
 <template>
-    <div class="w-full block lg:max-w-[75rem] md:min-w-[45rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4] md:mt-[3rem] lg:mt-auto">
+    <div class="w-full block xl-max-w-[75rem] lg:max-w-[65rem] md:min-w-[45rem] mx-auto px-4 py-6 text-center overflow-hidden text-[#f4f4f4] md:mt-[3rem] lg:mt-auto">
          <h1>
       <DecryptedText
         text="Hi, I'm Onadeko Akinfemi 
 Raphael"
         animate-on="view"
-        class-name="text-[#f4f4f4] md:text-[3rem] lg:text-[5rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-bold text-center leading-tight"
+        class-name="text-[#f4f4f4] md:text-[3rem] lg:text-[4rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-bold text-center leading-tight"
         encrypted-class-name="text-[#f4f4f4] md:text-[3.5rem] lg:text-[5rem] sm:text-[1rem]"
         style="font-family: 'Cakecafe';"
       />
     </h1>
-     <div class=" flex gap-3 lg:pt-[-2rem] md:pt-[2rem] text-center justify-center lg:text-[1.64rem] md:text-[1.15rem] text-[.6rem]"> 
+     <div class=" flex gap-1 lg:pt-[-2rem] md:pt-[2rem] text-center justify-center lg:text-[1.5rem] md:text-[1.15rem] text-[.6rem]"> 
             <Motion is="p" preset="slideVisibleBottom" :duration="800" class="">Software Engineer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1000" >Frontend Developer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1200" >UI/UX Designer ||</Motion> 

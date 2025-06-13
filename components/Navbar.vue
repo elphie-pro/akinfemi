@@ -1,7 +1,7 @@
 <template>
     <div class="bg-[#263238] text-[#f4f4f4] border-b-3 border-black overflow-hidden">
         <div :class="pathname === '/projects' ? 'w-full block max-w-[90rem] mx-auto px-4 py-4 md:py-6 pb-0' : 'w-full block lg:min-w-[70rem] md:max-w-[45rem] mx-auto px-4 py-4 md:py-6 pb-0' ">
-            <div class="flex justify-between" style="font-family: 'Cakecafe';">
+            <div class="flex justify-around" style="font-family: 'Cakecafe';">
                 <h1 class="text-[1.3rem]">AKINFEMI</h1>
                 <div class=" text-xl">
                     <ul class="flex gap-[4rem]">
