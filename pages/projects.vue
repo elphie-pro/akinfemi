@@ -3,7 +3,10 @@
     <div class="bg-[#263238] h-screen w-screen overflow-x-hidden">
         <Navbar />
         <Background />
-        <Project />
+       <div class="w-full m-auto max-w-6xl">
+          <Project />
+        </div>
+        
   </div>
 </template>
 
