@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full block max-w-[90rem] mx-auto px-4 py-6  overflow-x-hidden text-[#f4f4f4]  ">
+    <div class="w-full block max-w-[80rem] mx-auto px-4 py-6  overflow-x-hidden text-[#f4f4f4]  ">
         <h2 class="text-center text-[2.5rem]" style="font-family: 'Cakecafe';">My Recent Projects</h2>
         <div class="grid grid-cols-3">
              <div v-for="pj in projects" :key="pj.name">
-                <SpotlightCard  class="my-4 w-[28rem] h-[30rem] text-white border-white border-8 " style="background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
+                <SpotlightCard  class="my-4 w-[25rem] h-[30rem] text-white border-white border-8 " style="background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
             <div class="flex flex-col gap-4">
                 <img :src="pj.img" class="w-full"/>
                 <h1 class="font-custom text-[2rem] text-[#f4f4f4] font-black">{{ pj.title }}</h1>
