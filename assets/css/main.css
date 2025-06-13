@@ -19,7 +19,7 @@ html {
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
-  src: url('@/assests/fonts/Cakecafe.ttf') format('ttf');
+  src: url('@/assets/fonts/Cakecafe.ttf') format('ttf');
 }
 
 
