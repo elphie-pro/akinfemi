@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 html {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -11,16 +13,18 @@ html {
   box-sizing: border-box;
 }
 
+
 @font-face {
   font-family: 'Cakecafe';
-  src: url('@/public/fonts/Cakecafe.ttf') format('ttf');
-  font-weight: normal;
   font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url('@/assests/fonts/Cakecafe.ttf') format('ttf');
 }
 
 
 body{
-  font-family: 'Comic Sans MS';
+  font-family: ' Cakecafe', 'Comic Sans MS';
 }
 
 ::-webkit-scrollbar {
