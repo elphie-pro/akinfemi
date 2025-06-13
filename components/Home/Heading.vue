@@ -10,7 +10,7 @@ Raphael"
         style="font-family: 'Cakecafe';"
       />
     </h1>
-     <div class=" flex gap-1 lg:pt-[-2rem] md:pt-[2rem] text-center justify-center lg:text-[1.5rem] md:text-[1.15rem] text-[.6rem]"> 
+     <div class=" flex gap-1 lg:pt-[-2rem] md:pt-[2rem] text-center justify-center lg:text-[1.7rem] md:text-[1.15rem] text-[.6rem]"> 
             <Motion is="p" preset="slideVisibleBottom" :duration="800" class="">Software Engineer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1000" >Frontend Developer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1200" >UI/UX Designer ||</Motion> 
