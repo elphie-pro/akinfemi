@@ -8,7 +8,7 @@
   <div class="bg-[#263238] lg:min-h-screen min-h-screen md:min-h-screen overflow-x-hidden ">
     <Navbar />
     <Background />
-    <div class="w-full m-auto max-w-4xl">
+    <div class="w-full m-auto max-w-6xl">
       <Heading />
       <Skills />
     </div>

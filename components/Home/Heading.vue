@@ -5,7 +5,7 @@
         text="Hi, I'm Onadeko Akinfemi 
 Raphael"
         animate-on="view"
-        class-name="text-[#f4f4f4] md:text-[3rem] lg:text-[4rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-bold text-center leading-tight"
+        class-name="text-[#f4f4f4] md:text-[3rem] lg:text-[5rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-bold text-center leading-tight"
         encrypted-class-name="text-[#f4f4f4] md:text-[3.5rem] lg:text-[5rem] sm:text-[1rem]"
         style="font-family: 'Cakecafe';"
       />
