@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   </Head>
 
-  <div class="bg-[#263238] lg:min-h-screen min-h-screen md:min-h-screen overflow-x-hidden ">
+  <div class="dark:bg-[#263238] bg-[#f4f4f4] lg:min-h-screen min-h-screen md:min-h-screen overflow-x-hidden ">
     <Navbar />
     <Background />
     <div class="w-full m-auto max-w-6xl">
