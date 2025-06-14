@@ -16,6 +16,16 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   modules: ['@vueuse/motion/nuxt', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  tailwindcss: {
+    config: {
+      darkMode: 'class', // 👈 this is key
+      theme: {
+        extend: {
+          // Your custom theme settings (optional)
+        }
+      }
+    }
+  },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'light', // fallback value if not system preference found

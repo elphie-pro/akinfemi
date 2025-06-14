@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#263238] h-screen w-screen overflow-x-hidden">
+    <div class="dark:bg-[#263238] bg-[#f4f4f4] h-screen w-screen overflow-x-hidden">
         <Navbar />
         <Background />
         <Abou />
