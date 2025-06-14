@@ -24,7 +24,7 @@ html {
 
 
 body{
-  font-family: ' Cakecafe', 'Comic Sans MS';
+  font-family: 'Comic Sans MS',' Cakecafe' ;
 }
 
 ::-webkit-scrollbar {
