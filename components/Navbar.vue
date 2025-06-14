@@ -31,6 +31,7 @@ const pathname = computed(() => route.path)
 
 const colorMode = useColorMode()
 const toggle = () => {
+    console.log('Toggle clicked!', colorMode.preference)
     colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
 }
 
