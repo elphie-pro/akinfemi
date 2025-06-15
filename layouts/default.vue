@@ -6,10 +6,10 @@ import { NuxtPage } from '#components';
 <template>
   <div>
     <!-- <header class="p-4 bg-gray-100"></header> -->
-    <main>
+    <ColorScheme>
       <NuxtPage
        />
-    </main>
+    </ColorScheme>
     <!-- <footer class="p-4 bg-gray-100">My Footer</footer> -->
   </div>
 </template>
