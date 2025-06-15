@@ -5,13 +5,13 @@
                 <h1 class="text-[1.3rem]">AKINFEMI</h1>
                 <div class=" text-xl">
                     <ul class="flex gap-[4rem]">
-                        <li :class="pathname === '/' ? 'w-[5rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
+                        <li :class="pathname === '/' ? 'w-[5rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238]' : 'font-[#f4f4f4]'">
                             <NuxtLink to="/">Home</NuxtLink>
                         </li>
-                        <li :class="pathname === '/projects' ? 'w-[7rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
+                        <li :class="pathname === '/projects' ? 'w-[7rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238]' : 'font-[#f4f4f4]'">
                             <NuxtLink to="/projects">Projects</NuxtLink>
                         </li>
-                        <li :class="pathname === '/about' ? 'w-[8rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] bg-[#f4f4f4] text-[#263238]' : 'font-[#f4f4f4]'">
+                        <li :class="pathname === '/about' ? 'w-[8rem] h-[2.5rem] rounded-xl p-2 text-center mt-[-.5rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238]' : 'font-[#f4f4f4]'">
                             <NuxtLink to="/about">About Me</NuxtLink>
                         </li>
                     </ul>
