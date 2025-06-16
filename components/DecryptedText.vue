@@ -19,7 +19,7 @@
         <span
           v-for="(char, charIndex) in line.split('')"
           :key="`${lineIndex}-${charIndex}`"
-          :class="isRevealedOrDone(getGlobalIndex(lineIndex, charIndex)) ? className : encryptedClassName"
+          :class="getCharClassName(lineIndex, charIndex)"
         >
           {{ char }}
         </span>
@@ -78,6 +78,19 @@ const props = defineProps({
     type: String,
     default: 'hover',
     validator: (value) => ['hover', 'view'].includes(value)
+  },
+  // New props for different styling
+  highlightText: {
+    type: String,
+    default: ''
+  },
+  highlightClassName: {
+    type: String,
+    default: ''
+  },
+  highlightEncryptedClassName: {
+    type: String,
+    default: ''
   }
 })
 
@@ -144,6 +157,38 @@ const availableChars = computed(() => {
 
 const isRevealedOrDone = (globalIndex) => {
   return revealedIndices.value.has(globalIndex) || !isScrambling.value || !isHovering.value
+}
+
+// Check if character is part of highlight text
+const isHighlightChar = (lineIndex, charIndex) => {
+  if (!props.highlightText) return false
+  
+  const line = processedTextLines.value[lineIndex]
+  const beforeChar = line.substring(0, charIndex)
+  const afterChar = line.substring(charIndex + 1)
+  const currentSection = beforeChar + line[charIndex] + afterChar
+  
+  // Check if we're within the highlight text boundaries
+  const highlightStart = currentSection.toLowerCase().indexOf(props.highlightText.toLowerCase())
+  if (highlightStart === -1) return false
+  
+  const highlightEnd = highlightStart + props.highlightText.length - 1
+  return charIndex >= highlightStart && charIndex <= highlightEnd
+}
+
+// Get appropriate class name for character
+const getCharClassName = (lineIndex, charIndex) => {
+  const globalIndex = getGlobalIndex(lineIndex, charIndex)
+  const isRevealed = isRevealedOrDone(globalIndex)
+  const isHighlight = isHighlightChar(lineIndex, charIndex)
+  
+  if (isHighlight) {
+    return isRevealed 
+      ? (props.highlightClassName || props.className)
+      : (props.highlightEncryptedClassName || props.encryptedClassName)
+  }
+  
+  return isRevealed ? props.className : props.encryptedClassName
 }
 
 const getNextIndex = (revealedSet) => {
