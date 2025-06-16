@@ -15,7 +15,15 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  modules: ['@vueuse/motion/nuxt', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  modules: ['@vueuse/motion/nuxt', '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/google-fonts'],
+  googleFonts: {
+    families: {
+      // Example: add your font(s) here
+      Inter: true,
+      'Comforter Brush': [700, 700]
+    },
+    display: 'swap'
+  },
   tailwindcss: {
     config: {
       darkMode: 'class', // 👈 this is key
