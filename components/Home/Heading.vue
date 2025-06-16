@@ -4,7 +4,7 @@
   <DecryptedText
     text="Hi, I'm Akinfemi"
     animate-on="view"
-    class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3rem] lg:text-[5rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-light text-center leading-tight font-comforter"
+    class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3rem] lg:text-[5rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-light text-center leading-tight font-devonshire"
     encrypted-class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3.5rem] lg:text-[5rem] sm:text-[1rem]"
     highlight-text="Akinfemi"
     highlight-class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3rem] lg:text-[5rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-semibold text-center leading-tight font-poppins"

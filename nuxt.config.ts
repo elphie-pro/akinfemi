@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap'
+          href: "https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Devonshire&display=swap"
         }
       ]
     }

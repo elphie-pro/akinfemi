@@ -17,7 +17,7 @@
             </div> 
             </Motion>
             <div v-motion :initial="{ x: 100, y: 100, opacity: 0 }" :enter="{ x: 0, y: 0, opacity: 1 }" :variants="{ custom: { scale: 2 } }" :delay="300" :duration="2000" class="flex justify-center pt-[1rem]">
-                <button :duration="1500" @click="about"  class="w-[13rem] h-[2.5rem] dark:bg-[#f4f4f4] dark:text-[#263238] bg-[#263238] text-[1rem] rounded-xl cursor-pointer items-center justify-center flex gap-3" >VIEW ALL <img v-if="$colorMode.value === 'dark'" src="../../assets/images/arrow-right.svg" alt=""> <img v-else src="../../assets/images/arrow-rightt.svg" /> </button> 
+                <button :duration="1500" @click="about"  class="w-[13rem] h-[2.5rem] dark:bg-[#f4f4f4] dark:text-[#263238] bg-[#263238] text-[1.1rem] font-comic rounded-xl cursor-pointer items-center justify-center flex gap-3" >VIEW ALL <img v-if="$colorMode.value === 'dark'" src="../../assets/images/arrow-right.svg" alt=""> <img v-else src="../../assets/images/arrow-rightt.svg" /> </button> 
             </div>  
                 
             </div>

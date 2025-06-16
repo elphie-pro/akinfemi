@@ -40,8 +40,16 @@ html {
   font-family: 'poppins'
 }
 
+.font-devonshire{
+  font-family: 'Devonshire';
+}
+
+.font-comic{
+  font-family: 'Comic Sans Ms';
+}
+
 body{
-  font-family: 'Comic Sans MS' ;
+  font-family: 'poppins' ;
 }
 
 ::-webkit-scrollbar {
