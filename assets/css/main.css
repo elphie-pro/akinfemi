@@ -32,8 +32,12 @@ html {
 }
 
 
+.font-comforter{
+  font-family: 'Comforter Brush';
+}
+
 body{
-  font-family: 'Comic Sans MS',' Cakecafe' ;
+  font-family: 'Comic Sans MS' ;
 }
 
 ::-webkit-scrollbar {
