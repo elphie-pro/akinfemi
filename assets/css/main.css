@@ -52,6 +52,14 @@ body{
   font-family: 'poppins' ;
 }
 
+ .dark .conic-light{
+  background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);
+}
+
+.conic-light{
+  background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #81b8d3 30deg, #c4e1ef 360deg);
+}
+
 ::-webkit-scrollbar {
     width: .8rem;
     

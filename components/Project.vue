@@ -3,17 +3,17 @@
         <h2 class="text-center text-[2.5rem]" style="font-family: 'Cakecafe';">My Recent Projects</h2>
         <div class="grid grid-cols-2 mx-9 gap-x-[9rem]">
              <div v-for="pj in projects" :key="pj.name">
-                <SpotlightCard  class="my-4 w-[28rem] h-[30rem] text-white dark:border-white border-[#263238] border-8 " style="background: conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #81b8d3 30deg, #c4e1ef 360deg);" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
+                <SpotlightCard  class="my-4 w-[28rem] h-[30rem] text-white dark:border-white border-[#263238] dark:border-8 dark:conic-dark conic-light" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
             <div class="flex flex-col gap-4">
                 <img :src="pj.img" class="w-full"/>
                 <h1 class="font-custom text-[2rem] dark:text-[#f4f4f4] text-[#263238] font-black">{{ pj.title }}</h1>
                 <div class="flex justify-between items-center">
-                <h2>Tech Stack:</h2>
-                <p class="text-[.8rem] w-[16rem]">{{ pj.stack }}</p>
+                <h2 class="dark:text-[#f4f4f4] text-[#263238]">Tech Stack:</h2>
+                <p class="text-[.8rem] w-[16rem] dark:text-[#f4f4f4] text-[#263238]">{{ pj.stack }}</p>
                 </div>
                 <div class="flex justify-between items-center">
-                <h2>Description:</h2>
-                <p class="text-[.8rem] w-[16rem]">{{ pj.descript }}</p>
+                <h2 class="dark:text-[#f4f4f4] text-[#263238]">Description:</h2>
+                <p class="text-[.8rem] w-[16rem] dark:text-[#f4f4f4] text-[#263238]">{{ pj.descript }}</p>
                 </div>
                 <div class="flex justify-between">
                     <NuxtLink :to="pj.site" @click.stop :class="pj.site === '' ? 'flex items-center gap-2 text-[#b1afaf] line-through' : 'flex items-center gap-2 text-[#b1afaf]'">View Live Site <img src="../assets/images/send-sqaure-2.svg" alt="" class="w-[1.5rem]"></NuxtLink>

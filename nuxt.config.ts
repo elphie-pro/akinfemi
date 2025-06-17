@@ -32,15 +32,15 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     config: {
-      darkMode: 'class', // 👈 this is key
+      darkMode: 'class',
+      content: [],
       theme: {
         extend: {
-          backgroundImage: {
-            'conic-dark': 'conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);'
-          }
-        }
-      }
-    }
+          
+        },
+      },
+      plugins: [],
+    },
   },
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
