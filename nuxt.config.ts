@@ -35,7 +35,9 @@ export default defineNuxtConfig({
       darkMode: 'class', // 👈 this is key
       theme: {
         extend: {
-          // Your custom theme settings (optional)
+          backgroundImage: {
+            'conic-dark': 'conic-gradient(from 210deg, #367898 0deg, #3B8DB7 160deg, #2e4f5f 30deg, #29353B 360deg);'
+          }
         }
       }
     }
