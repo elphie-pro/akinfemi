@@ -3,11 +3,11 @@
         <title>Akinfemi || About</title>
     </head>
     <div class="w-full block max-w-[80rem] mx-auto px-4 py-6  overflow-x-hidden text-[#f4f4f4]  ">
-        <h2 class="text-center text-[3.5rem]" style="font-family: 'Cakecafe';">Who is Akinfemi?</h2>
+        <h2 class="text-center text-[3.5rem] font-devonshire">Who is Akinfemi?</h2>
 
         <div class="flex justify-between pt-[1rem]">
             <div class="justify-center items-center w-[35rem] pt-[9rem]">
-                <h1 class="text-center text-[3.5rem]" style="font-family: 'Cakecafe';">“The only way to do great work to to love what you do”</h1>
+                <h1 class="text-center text-[4.5rem] font-devonshire">“The only way to do great work to to love what you do”</h1>
             </div>
             <div class="text-[1.2rem] flex flex-col gap-5 text-center">
                 <h2> Onadeko Akinfemi is a self-taught and highly motivated <br> software engineer with solid experience in frontend <br> development of systems that scale to a lot of users.</h2>
