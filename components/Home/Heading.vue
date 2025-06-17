@@ -8,26 +8,26 @@
     encrypted-class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3.5rem] lg:text-[5rem] sm:text-[1rem]"
     highlight-text="Akinfemi"
     highlight-class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3rem] lg:text-[5rem] min-[420px]:text-[1.8rem] text-[1.5rem] font-semibold text-center leading-tight font-poppins"
-    highlight-encrypted-class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3.5rem] lg:text-[5rem] sm:text-[1rem] font-poppins"
+    highlight-encrypted-class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3.5rem] lg:text-[5rem]  sm:text-[1rem] font-poppins"
   />
 </h1>
-     <div class=" flex gap-1 lg:pt-[-2rem] md:pt-[2rem] text-center justify-center lg:text-[1.7rem] md:text-[1.15rem] text-[.6rem] dark:text-[#f4f4f4] text-[#263238]"> 
+     <div class=" flex gap-1 lg:pt-[-2rem] md:pt-[2rem] text-center justify-center lg:text-[1.55rem] md:text-[1.15rem] text-[.6rem] dark:text-[#f4f4f4] text-[#263238]"> 
             <Motion is="p" preset="slideVisibleBottom" :duration="800" class="">Software Engineer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1000" >Frontend Developer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1200" >UI/UX Designer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1400" >Photographer </Motion> 
         </div>
       <motion  is="div" preset="slideVisibleBottom" :duration="1800" class="flex gap-7 md:flex-row pt-[2.5rem] justify-center">
-        <motion  is="button" preset="slideVisibleLeft" :duration="2000" class="md:w-[10rem] md:h-[2.5rem] w-[7rem] h-[2.5rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1rem] md:text-[1.2rem] rounded-xl md:rounded-2xl cursor-pointer" @click="show = true">Contact Me</motion>
+        <motion  is="button" preset="slideVisibleLeft" :duration="2000" class="md:w-[10rem] md:h-[2.5rem] w-[7rem] h-[2.5rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1rem] md:text-[1.2rem] rounded-xl md:rounded-2xl cursor-pointer" @click="sendEmail">Contact Me</motion>
         <motion  is="button" preset="slideVisibleRight" :duration="2000" class="md:w-[10rem] md:h-[2.5rem] w-[7rem] h-[2.5rem] dark:border-[#f4f4f4] border-[#263238] dark:text-[#f4f4f4] text-[#263238] border text-[1rem] md:text-[1.2rem] rounded-xl md:rounded-2xl cursor-pointer"><NuxtLink to="https://drive.google.com/file/d/1fNDQ65ThoWFEs_Nzqjuz8yy8eeqRgZJK/view?usp=drive_link">My Resume</NuxtLink></motion>
       </motion>
-    </div>
-    <div v-if="show" class="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
-      <h2>reddd</h2>
     </div>
 </template>
 
 <script setup>
 import DecryptedText from '../components/DecryptedText.vue';
-const show = ref(false)
+const sendEmail = () => {
+  window.location.href = 'mailto:onazjr2006@gmail.com?subject=Hello, I would like to make enqiuires.'
+
+}
 </script>
