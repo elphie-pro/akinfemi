@@ -21,7 +21,7 @@
                  <div>
                     <button @click="handleToggle" class="block md:hidden lg:hidden xl:hidden"><img :src="colorMode.preference === 'dark' ? darkImage : lightImage" /></button>
                         <div :class="[open ? 'block' : 'hidden', 'md:hidden bg-[#263238] shadow-2xl absolute top-16 right-0 w-screen p-8 z-50']">
-                            <ul class="flex flex-col gap-[4rem]">
+                            <ul class="flex flex-col gap-[2rem] ml-[2rem]">
                                 <li :class="pathname === '/' ? 'w-[5rem] h-[2.5rem] rounded-xl p-[.4rem] text-center mt-[rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1.4rem] ' : 'font-[#f4f4f4] text-[1.4rem]'">
                                     <NuxtLink to="/">Home</NuxtLink>
                                 </li>
