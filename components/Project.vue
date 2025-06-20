@@ -1,9 +1,9 @@
 <template>
     <div class="w-full max-w-6xl m-auto px-4 py-6  overflow-x-hidden text-[#f4f4f4]  ">
         <h2 class="text-center text-[3rem] font-devonshire dark:text-[#f4f4f4] text-[#263238]">My Recent Projects</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 grid-cols-1 mx-9 gap-x-[5rem] lg:gap-x-[9rem] md:gap-x-[5rem] md:ml-[-.05rem] ">
+        <div class="grid-cols-2 flex flex-wrap items-center justify-center xl:grid mx-9 gap-x-[5rem] lg:gap-x-[9rem] md:gap-x-[5rem] md:ml-[-.05rem] ">
              <div v-for="pj in projects" :key="pj.name" class="">
-                <SpotlightCard  class="my-4 w-min ml-[-1rem] md:w-[23rem] lg:w-[28rem] h-[30rem] text-white dark:border-white border-[#263238] dark:border-8  dark:conic-dark conic-light" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
+                <SpotlightCard  class="my-4  sm:w-96 w-[80vw] ml-[-1rem] h-[30rem] text-white dark:border-white border-[#263238] dark:border-8  dark:conic-dark conic-light" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
             <div class="flex flex-col gap-4">
                 <img :src="pj.img" class="w-full"/>
                 <h1 class="font-custom text-[2rem] dark:text-[#f4f4f4] text-[#263238] font-black">{{ pj.title }}</h1>
