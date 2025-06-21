@@ -2,11 +2,11 @@
     <div class="w-full block max-w-[65rem] mx-auto px-4 py-6  overflow-x-hidden dark:text-[#f4f4f4] text-[#263238] ">
         <h2 class="text-center text-[3.5rem] font-devonshire">Who is Akinfemi?</h2>
 
-        <div class="flex justify-between pt-[1rem] pb-[3rem]">
-            <div class="justify-center items-center w-[35rem] pt-[9rem]">
+        <div class="flex flex-col md:flex-row justify-between pt-[1rem] pb-[3rem]">
+            <div class="justify-center items-center md:w-[35rem] md:pt-[9rem]">
                 <h1 class="text-center text-[4.5rem] font-devonshire">“The only way to do great work to to love what you do”</h1>
             </div>
-            <div class="text-[1.2rem] flex flex-col gap-3 text-center w-[30rem]">
+            <div class="text-[1.2rem] flex flex-col gap-3 text-center md:w-[30rem]">
                 <h2> Onadeko Akinfemi is a self-taught and highly motivated br> software engineer with solid experience in frontend br> development of systems that scale to a lot of users.</h2>
                 <h2>My coding journey began in the 8th grade in high school br> when many of my schoolmates were making websites for br> fun, which caught my attention. Unlike others, I didn't br> eventually drop web development; instead, it continuously br> piqued my interest and made me want to dive deeper into br> the world of tech. My career as a developer started br> officially in the 9th grade when I could confidently build br> different websites by myself and i eventually started br> working with JavaScript.</h2>
                 <h2>Today, with expertise in Frontend development and UI/ br>UX design, combined with resilience and determination, br> along with skills in various technologies like React.js, br> Vue.js, Figma, and more, I've had the opportunity to br> collaborate with great minds to engineer solutions to br> problems.</h2>
