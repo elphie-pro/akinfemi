@@ -11,7 +11,7 @@
     highlight-encrypted-class-name="dark:text-[#f4f4f4] text-[#263238] md:text-[3.5rem] lg:text-[5rem]  sm:text-[1rem] font-poppins"
   />
 </h1>
-     <div class=" flex gap-1 lg:pt-[-2rem] md:pt-[2rem] text-center justify-center lg:text-[1.55rem] md:text-[1.15rem] text-[.6rem] dark:text-[#f4f4f4] text-[#263238]"> 
+     <div class=" flex gap-1 lg:pt-[-2rem] md:pt-[2rem] text-center justify-center lg:text-[1.55rem] md:text-[1.15rem] text-[.5rem] dark:text-[#f4f4f4] text-[#263238]"> 
             <Motion is="p" preset="slideVisibleBottom" :duration="800" class="">Software Engineer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1000" >Frontend Developer ||</Motion> 
             <Motion is="p" preset="slideVisibleBottom" :duration="1200" >UI/UX Designer ||</Motion> 
