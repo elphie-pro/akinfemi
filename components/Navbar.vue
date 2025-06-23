@@ -21,17 +21,27 @@
                  <div>
                     <button @click="handleToggle" class="block md:hidden lg:hidden xl:hidden"><img :src="colorMode.preference === 'dark' ? darkImage : lightImage" /></button>
                         <div :class="[open ? 'block' : 'hidden', 'md:hidden dark:bg-[#263238] bg-[#f4f4f4] shadow-2xl absolute top-16 right-0 w-full p-8 z-50']">
-                            <ul class="flex flex-col gap-[2rem] ml-[2rem]">
-                                <li :class="pathname === '/' ? 'w-[5rem] h-[2.5rem] rounded-xl p-[.4rem] text-center mt-[rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1.4rem] ' : 'dark:text-[#f4f4f4] text-[#263238] text-[1.4rem]'">
-                                    <NuxtLink to="/">Home</NuxtLink>
-                                </li>
-                                <li :class="pathname === '/projects' ? 'w-[7rem] h-[2.5rem] rounded-xl p-[.4rem] text-center mt-[rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1.4rem] ' : 'dark:text-[#f4f4f4] text-[#263238] text-[1.4rem]'">
-                                    <NuxtLink to="/projects">Projects</NuxtLink>
-                                </li>
-                                <li :class="pathname === '/about' ? 'w-[8rem] h-[2.5rem] rounded-xl p-[.4rem] text-center mt-[rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1.4rem] ' : 'dark:text-[#f4f4f4] text-[#263238] text-[1.4rem]'">
-                                    <NuxtLink to="/about">About Me</NuxtLink>
-                                </li>
-                            </ul>
+                            <div class="flex justify-between">
+                               <ul class="flex flex-col gap-[2rem] ml-[2rem]">
+                                    <li :class="pathname === '/' ? 'w-[5rem] h-[2.5rem] rounded-xl p-[.4rem] text-center mt-[rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1.4rem] ' : 'dark:text-[#f4f4f4] text-[#263238] text-[1.4rem]'">
+                                        <NuxtLink to="/">Home</NuxtLink>
+                                    </li>
+                                    <li :class="pathname === '/projects' ? 'w-[7rem] h-[2.5rem] rounded-xl p-[.4rem] text-center mt-[rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1.4rem] ' : 'dark:text-[#f4f4f4] text-[#263238] text-[1.4rem]'">
+                                        <NuxtLink to="/projects">Projects</NuxtLink>
+                                    </li>
+                                    <li :class="pathname === '/about' ? 'w-[8rem] h-[2.5rem] rounded-xl p-[.4rem] text-center mt-[rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1.4rem] ' : 'dark:text-[#f4f4f4] text-[#263238] text-[1.4rem]'">
+                                        <NuxtLink to="/about">About Me</NuxtLink>
+                                    </li>
+                                </ul> 
+                                <div class="flex flex-col gap-4 justify-center items-center">
+                                    <div class="w-[4rem] h-[.1rem] dark:bg-[#000] bg-[#263238]"></div>
+                                    <NuxtLink to="https://github.com/elphie-pro"><img src="../assets/images/mdi_github.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
+                                    <NuxtLink to="https://x.com/DevElphie"><img src="../assets/images/mdi_twitter.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
+                                    <NuxtLink to="https://www.linkedin.com/in/akinfemi-onadeko-5b0b852a6/"><img src="../assets/images/devicon_linkedin.svg" alt="" class="md:w-[2.5rem] w-[2rem]"></NuxtLink>
+                                    <div class="w-[4rem] h-[.1rem] dark:bg-[#000] bg-[#263238]"></div>
+                                </div>
+                            </div>
+                            
                         </div>
                  </div>
                     <button v-if="colorMode.value === 'dark'" class="cursor-pointer" @click="toggle"><img src="../assets/images/Group 5.svg"/></button> 
