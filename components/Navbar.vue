@@ -41,16 +41,12 @@
                                     <div class="w-[4rem] h-[.1rem] dark:bg-[#000] bg-[#263238]"></div>
                                 </div>
                             </div>
-                            
                         </div>
                  </div>
                     <button v-if="colorMode.value === 'dark'" class="cursor-pointer" @click="toggle"><img src="../assets/images/Group 5.svg"/></button> 
                     <button v-else class="cursor-pointer" @click="toggle"><img src="../assets/images/Group 2.svg"/></button> 
                 </div>
-                
-                    
             </div>
-            
         </div>
     </div>
 </template>
