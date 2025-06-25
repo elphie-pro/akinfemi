@@ -4,7 +4,7 @@
 
         <div class="flex flex-col md:flex-row justify-between pt-[1rem] pb-[3rem]">
             <div class="justify-center items-center md:w-[35rem] md:pt-[9rem]">
-                <h1 class="text-center text-[4.5rem] font-devonshire hidden md:block">“The only way to do great work is to love what you do”</h1>
+                <h1 class="text-center text-[4.5rem] font-devonshire hidden md:block lg:block">“The only way to do great work is to love what you do”</h1>
             </div>
             <div class="text-[1.2rem] flex flex-col gap-3 text-center md:w-[30rem]">
                 <h2> Onadeko Akinfemi is a self-taught and highly motivated br> software engineer with solid experience in frontend br> development of systems that scale to a lot of users.</h2>
