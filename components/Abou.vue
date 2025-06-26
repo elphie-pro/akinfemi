@@ -17,14 +17,14 @@
             <div v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200" :duration="1200" class="flex gap-4 items-center justify-end md:justify-start" >
                 <Motion is="div" preset="slideVisibleLeft" :duration="1600" class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] dark:bg-[#f4f4f4] bg-[#263238] "></Motion> 
                 <Motion
-  is="h2"
-  :initial="{ y: -100, opacity: 0 }"
-  :enter="{ y: 0, opacity: 1 }"
-  :duration="1400"
-  class="md:text-[2.3rem] text-[1.3rem]"
->
-  Skills
-</Motion>
+                    is="h2"
+                    :initial="{ y: -100, opacity: 0 }"
+                    :enter="{ y: 0, opacity: 1 }"
+                    :duration="1400"
+                    class="md:text-[2.3rem] text-[1.3rem]"
+                    >
+                    Skills
+                    </Motion>
                 <Motion is="div" preset="slideVisibleRight" :duration="2000" class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] dark:bg-[#f4f4f4] bg-[#263238] mt-[rem] "></Motion>
             </div>
         
