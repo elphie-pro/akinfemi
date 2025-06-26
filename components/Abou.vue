@@ -15,32 +15,17 @@
         </div>
         <div class="w-full block lg:max-w-[80rem] md:max-w-[45rem] mx-auto px-4 py-6 text-center overflow-hidden dark:text-[#f4f4f4] text-[#263238] lg:mt-[-2rem] mt-[1rem]">
             <div v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200" :duration="1200" class="flex gap-4 items-center justify-end md:justify-start" >
-               <Motion
-  is="div"
-  :initial="{ x: -100, y: 100, opacity: 0 }"
-  :enter="{ x: 0, y: 0, opacity: 1 }"
-  :duration="1600"
-  class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] dark:bg-[#f4f4f4] bg-[#263238]"
-/>
-
-<Motion
+                <Motion is="div" preset="slideVisibleLeft" :duration="1600" class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] dark:bg-[#f4f4f4] bg-[#263238] "></Motion> 
+                <Motion
   is="h2"
-  :initial="{ y: 100, opacity: 0 }"
+  :initial="{ y: -100, opacity: 0 }"
   :enter="{ y: 0, opacity: 1 }"
   :duration="1400"
   class="md:text-[2.3rem] text-[1.3rem]"
 >
   Skills
 </Motion>
-
-<Motion
-  is="div"
-  :initial="{ x: 100, y: 100, opacity: 0 }"
-  :enter="{ x: 0, y: 0, opacity: 1 }"
-  :duration="2000"
-  class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] dark:bg-[#f4f4f4] bg-[#263238] mt-[rem]"
-/>
-
+                <Motion is="div" preset="slideVisibleRight" :duration="2000" class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] dark:bg-[#f4f4f4] bg-[#263238] mt-[rem] "></Motion>
             </div>
         
             <Motion is="div" preset="slideVisibleBottom" :duration="1000" class="grid grid-cols-3 md:grid-cols-5 gap-4 p-4 "> 
