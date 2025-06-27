@@ -97,7 +97,8 @@ const projects = [
         code: 'https://github.com/elphie-pro/ElphBank',
          stackImages: [
             {
-                name: 'yams dawg'
+                name: 'yams dawg and gishes',
+                
             }
         ]
     },
