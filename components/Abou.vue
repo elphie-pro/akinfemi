@@ -1,6 +1,6 @@
 <template>
     <div class="w-full block max-w-[65rem] mx-auto px-4 py-6  overflow-x-hidden dark:text-[#f4f4f4] text-[#263238] ">
-        <h2 class="text-center text-[3.5rem] font-devonshire">Who is Akinfemi?</h2>
+        <h2 class="text-center text-[3.5rem] font-devonshire">Who is <span class="font">Onadeko Akinfemi Raphael</span>?</h2>
 
         <div class="flex flex-col md:flex-row justify-between pt-[1rem] pb-[3rem]">
             <div class="justify-center items-center md:w-[35rem] md:pt-[9rem]">
