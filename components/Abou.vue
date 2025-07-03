@@ -7,7 +7,7 @@
                 <h1 class="text-center text-[4.5rem] font-devonshire hidden md:block lg:block">“The only way to do great work is to love what you do”</h1>
                 <div class="flex  items-center gap-3 ml-[13rem]">
                     <div class="w-[5rem] md:h-[.1rem] h-[.1rem] dark:bg-[#fff] bg-[#263238] "></div>
-                <p class="font-devonshire text-[2rem]">Steve Jobs & I</p>
+                <p class="font-devonshire text-[2rem]">Steve Jobs</p>
                 <div class="w-[5rem] md:h-[.1rem] h-[.1rem] dark:bg-[#fff] bg-[#263238] "></div>
                 </div>
                 
