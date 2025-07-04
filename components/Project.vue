@@ -2,7 +2,7 @@
     <div class="w-full max-w-6xl m-auto px-4 py-6  overflow-x-hidden text-[#f4f4f4]  ">
         <h2 class="text-center text-[3rem] font-devonshire dark:text-[#f4f4f4] text-[#263238]">My Recent Projects</h2>
         <div class="grid-cols-2 flex flex-wrap items-center justify-center xl:grid mx-9 gap-x-[5rem] lg:gap-x-[9rem] md:gap-x-[5rem] md:ml-[-.05rem] ml-[3rem] ">
-             <div v-for="pj in projects" :key="pj.name" class="">
+             <div v-for="pj in projects" :key="pj.name" class="lg:ml-[3.5rem]">
                 <SpotlightCard  class="my-4 p-[.5rem] md:p-[2rem] sm:w-96 w-[80vw] md:h-[30rem] text-white dark:border-white border-[#263238] dark:border-8  dark:conic-dark conic-light" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
             <div class="flex flex-col gap-4 py-2 md:py-0">
                 <img :src="pj.img" class="w-full"/>
