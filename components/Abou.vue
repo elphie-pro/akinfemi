@@ -5,11 +5,14 @@
         <div class="flex flex-col md:flex-row justify-between pt-[1rem] pb-[3rem]">
             <div class="justify-center items-center md:w-[35rem] md:pt-[9rem]">
                 <h1 class="text-center text-[4.5rem] font-devonshire hidden md:block lg:block">“The only way to do great work is to love what you do”</h1>
-                <div class="flex  items-center gap-3 ml-[13rem]">
+                <div class="hidden md:block lg:block">
+                  <div class="flex  items-center gap-3 ml-[13rem]">
                     <div class="w-[5rem] md:h-[.1rem] h-[.1rem] dark:bg-[#fff] bg-[#263238] "></div>
                 <p class="font-devonshire text-[2rem]">Steve Jobs</p>
                 <div class="w-[5rem] md:h-[.1rem] h-[.1rem] dark:bg-[#fff] bg-[#263238] "></div>
+                </div>  
                 </div>
+                
                 
             </div>
             <div class="text-[1.2rem] flex flex-col gap-3 text-center md:w-[30rem]">
@@ -20,7 +23,7 @@
             </div>
         </div>
         <div class="w-full block lg:max-w-[80rem] md:max-w-[45rem] mx-auto px-4 py-6 text-center overflow-hidden dark:text-[#f4f4f4] text-[#263238] lg:mt-[-2rem] mt-[1rem]">
-            <div v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200" :duration="1200" class="flex gap-4 items-center justify-end md:justify-start" >
+            <div v-motion :initial="{ opacity: 0, y: 100 }" :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200" :duration="1200" class="flex gap-4 items-center justify-start" >
                 <Motion is="div" preset="slideVisibleLeft" :duration="1600" class="w-[6rem] md:w-[8rem] md:h-[.1rem] h-[.1rem] dark:bg-[#f4f4f4] bg-[#263238] "></Motion> 
                 <Motion
                     is="h2"
