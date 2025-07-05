@@ -37,7 +37,7 @@
             <Motion is="div" preset="slideVisibleBottom" :duration="1000" class="grid grid-cols-3 md:grid-cols-5 gap-4 p-4 "> 
             <div v-for="sk in Skills" :key="sk.name" class="flex flex-col gap-3 text-center">
                 <div class="flex flex-col gap-3 justify-center items-center">
-                    <div class="md:w-[5rem] md:h-[7rem] w-[5rem] h-[5rem] border dark:border-[#f4f4f4] border-[#263238] rounded-xl flex items-center justify-center">
+                    <div class="md:w-[7rem] md:h-[7rem] w-[5rem] h-[5rem] border dark:border-[#f4f4f4] border-[#263238] rounded-xl flex items-center justify-center">
                     <img :src="sk.img" alt="" class="max-w-[50%] max-h-[50%] md:max-w-[70%] md:max-h-[70%] object-contain" /> 
                     </div>
                     <h2 class="">{{ sk.name }}</h2>   
