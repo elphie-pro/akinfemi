@@ -22,20 +22,20 @@
             </div>
             </SpotlightCard>
                 <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white overflow-scroll" @click="show = false">
-                    <div class="bg-[#263238]/40 h-auto ml-[-1rem] w-[50rem] p-8 flex flex-col  justify-between" @click.stop>
-                            <img :src="selectedProject.img" class="w-[50rem]"/>
-                            <div class="flex">
+                    <div class="bg-[#263238]/40 h-auto ml-[-1rem] w-[65rem] p-8 px-18 flex flex-col  justify-between" @click.stop>
+                            <img :src="selectedProject.img" class="w-[55rem]"/>
+                            <div class="flex gap-[9rem]">
                                             <div class="flex flex-col gap-5">
-                                        <div class="flex gap-8 items-center">
-                                            <h2 class="text-[1.3rem]">Project Title:</h2>
-                                            <h2 class="text-[2rem]">{{ selectedProject.title }}</h2>
+                                        <div class="flex gap-4 items-center">
+                                            <h2 class="text-[.9rem]">Project Title:</h2>
+                                            <h2 class="text-[1.3rem]">{{ selectedProject.title }}</h2>
                                         </div>
                                         <div>
                                                 <h2 class="text-[1.3rem]">Tech Stack: </h2>
-                                                <div class="grid grid-cols-3 md:grid-cols-5 gap-4 p-4">
+                                                <div class="grid grid-cols-2 gap-4 p-4">
                                                 <div v-for="sk in selectedProject.stackImages" :key="sk.name" class="flex flex-col gap-3 text-center">
-                                                        <div class="flex flex-col gap-3 justify-center items-center">
-                                                            <div class="w-[7rem] h-[7rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
+                                                        <div class="flex flex-col gap- justify-center items-center">
+                                                            <div class="w-[3rem] h-[3rem] border border-[#f4f4f4] rounded-xl flex items-center justify-center">
                                                             <img :src="sk.source" alt="" class="max-w-[70%] max-h-[70%] object-contain" /> 
                                                             </div>
                                                             <h2 class="">{{ sk.name }}</h2>   
