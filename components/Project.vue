@@ -21,8 +21,9 @@
                 </div> 
             </div>
             </SpotlightCard>
-                <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="show = false">
-                    <div class="bg-[#263238]/40 w-[89rem] h-auto ml-[-1rem] p-8 flex justify-between" @click.stop>
+                <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white overflow-scroll" @click="show = false">
+                    <div class="bg-[#263238]/40 h-auto ml-[-1rem] p-8 flex flex-col  justify-between" @click.stop>
+                            <img :src="selectedProject.img" class="w-[50rem]"/>
                         <div class="flex flex-col gap-5">
                             <div class="flex gap-8 items-center">
                                 <h2 class="text-[1.3rem]">Project Title:</h2>
@@ -44,7 +45,6 @@
                                  </div> 
                         </div>
                         <div class="flex flex-col w-[50rem] gap-5">
-                            <img :src="selectedProject.img" class="w-[50rem]"/>
                             <h3 class="text-[1.5rem] underline">Description:</h3>
                             <h2 class="text-[1.3rem]"> {{ selectedProject.description }} </h2>
                         </div>
