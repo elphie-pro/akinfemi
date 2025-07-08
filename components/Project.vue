@@ -25,7 +25,7 @@
                     <div class="bg-[#263238]/40 h-auto ml-[-1rem] md:w-[65rem] w-auto p-8 px-18 flex flex-col  justify-between" @click.stop>
                             <img :src="selectedProject.img" class="w-full"/>
                             <div class="flex gap-[9rem] pt-3">
-                                            <div class="flex flex-col gap-5 w-[25rem]">
+                                            <div class="flex flex-col gap-5 ">
                                         <div class="flex gap-4 items-center">
                                             <h2 class="text-[.9rem]">Project Title:</h2>
                                             <h2 class="text-[1.3rem]">{{ selectedProject.title }}</h2>
