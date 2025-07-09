@@ -21,8 +21,8 @@
                 </div> 
             </div>
             </SpotlightCard>
-                <div v-if="show" class="absolute bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white " @click="show = false">
-                    <div class="bg-[#263238]/40 md:h-auto ml-[-1rem] h-[35rem] w-[20rem] md:w-[65rem] p-8 px-18 flex flex-col  justify-between" @click.stop>
+                <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white " @click="show = false">
+                    <div class="bg-[#263238]/40 md:h-auto ml-[-1rem] h-[35rem] w-[20rem] md:w-[65rem] md:p-8 p-2 md:px-18 flex flex-col  justify-between" @click.stop>
                             <img :src="selectedProject.img" class="w-full"/>
                             <div class="flex flex-col md:flex-row md:gap-[9rem] pt-3">
                                             <div class="flex flex-col gap-5 ">
