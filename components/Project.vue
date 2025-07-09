@@ -21,10 +21,10 @@
                 </div> 
             </div>
             </SpotlightCard>
-                <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white " @click="show = false">
-                    <div class="bg-[#263238]/40 md:h-auto ml-[-1rem] h-[35rem] w-[20rem] md:w-[65rem] md:p-8 p-2 md:px-18 flex flex-col  justify-between" @click.stop>
+                <div v-if="show" class="fixed bg-black/10 min-h-screen z-10 w-screen hidden md:flex justify-center items-center top-0 left-0 text-white " @click="show = false">
+                    <div class="bg-[#263238]/40 md:h-[50rem] ml-[-1rem] h-[35rem] w-[20rem] md:w-[40rem] lg:w-[65rem] md:p-8 p-2 md:px-10 lg::px-18 flex flex-col  justify-between" @click.stop>
                             <img :src="selectedProject.img" class="w-full"/>
-                            <div class="flex flex-col md:flex-row md:gap-[9rem] pt-3">
+                            <div class="flex flex-col md:flex-row md:gap-[5rem] pt-3">
                                             <div class="flex flex-col gap-5 ">
                                         <div class="flex gap-4 items-center">
                                             <h2 class="text-[.9rem]">Project Title:</h2>
@@ -45,9 +45,9 @@
                                                 
                                             </div> 
                                     </div>
-                                    <div class="flex flex-col gap-5">
+                                    <div class="flex flex-col gap-3">
                                         <h3 class="text-[1.3rem] underline">Description:</h3>
-                                        <h2 class="text-[1rem]"> {{ selectedProject.description }} </h2>
+                                        <h2 class="text-[.8rem]"> {{ selectedProject.description }} </h2>
                                     </div>
                                     
                                 </div>
