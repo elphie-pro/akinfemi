@@ -94,7 +94,8 @@ const projects = [
                 source: images['../assets/images/devicon_tailwindcss.svg']
             },
             {
-                
+                name: 'Framer Motion',
+                source: images['../assets/images/framer 1.svg']
             }
         ]
     },
