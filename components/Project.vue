@@ -86,8 +86,15 @@ const projects = [
                 source:  images['../assets/images/logos_vue.svg']
             },
             {
-                name: 'Tailwind',
-                source:  images['../assets/images/devicon_linkedin.svg']
+                name: 'Nuxt JS',
+                source:  images['../assets/images/material-icon-theme_nuxt.svg']
+            },
+            {
+                name: 'Tailwind CSS',
+                source: images['../assets/images/devicon_tailwindcss.svg']
+            },
+            {
+                
             }
         ]
     },

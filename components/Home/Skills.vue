@@ -74,30 +74,6 @@ const about = () => {
             name: 'Photoshop',
             img: images['../../assets/images/devicon_photoshop.svg']
         },
-        {
-            name: 'HTML',
-            img: images['../../assets/images/Vector.svg']
-        },
-        {
-            name: 'HTML',
-            img: images['../../assets/images/Vector.svg']
-        },
-        {
-            name: 'HTML',
-            img: images['../../assets/images/Vector.svg']
-        },
-        {
-            name: 'HTML',
-            img: images['../../assets/images/Vector.svg']
-        },
-        {
-            name: 'HTML',
-            img: images['../../assets/images/Vector.svg']
-        },
-        {
-            name: 'HTML',
-            img: images['../../assets/images/Vector.svg']
-        },
     ]
 </script>
 
