@@ -108,7 +108,7 @@ const projects = [
         title: 'ElphBank',
         img: images['../assets/images/Screenshot 2025-05-15 195231.png'],
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
-        descript: 'A makeshift banking site with minimal functionalities',
+        descript: 'A makeshift banking site with minimal functionalities.',
         site:'',
         code: 'https://github.com/elphie-pro/ElphBank',
          stackImages: [
@@ -133,7 +133,7 @@ const projects = [
         title: 'ElphBlog V1',
         img: images['../assets/images/Screenshot 2025-05-15 102407.png'],
         stack: 'React.JS, JavaScript, CSS, Firebase Auth, Firestore',
-        descript: 'ElphBlog is a blogging website that allows',
+        descript: 'A blogging website with the basic CRUD functions.',
         site:'https://elph-blog.vercel.app/',
         code: 'https://github.com/elphie-pro/ElphBlog',
         stackImages: [
@@ -154,10 +154,21 @@ const projects = [
     {
         title: 'Pay4Me UI',
         img: images['../assets/images/Screenshot 2025-05-26 194523.png'],
-        stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
-        descript: 'ElphBank is a makeshift banking site',
+        stack: 'React.JS, JavaScript, CSS',
+        descript: 'Landing page for a Pay4Me design.',
         site:'',
-        code: 'https://github.com/elphie-pro/Pay4Me-UI'
+        code: 'https://github.com/elphie-pro/Pay4Me-UI',
+        stackImages: [
+            {
+                source:  images['../assets/images/material-icon-theme_react.svg']
+            },
+            {
+                source:  images['../assets/images/Group 222.svg']
+            },
+            {
+                source: images['../assets/images/devicon_css3.svg']
+            }
+        ]
     },
     {
         title: 'Currency Converter',
@@ -165,7 +176,21 @@ const projects = [
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site',
         site:'https://currency-converter-olive-xi.vercel.app/',
-        code: 'https://github.com/elphie-pro/Currency-Converter'
+        code: 'https://github.com/elphie-pro/Currency-Converter',
+        stackImages: [
+            {
+                source:  images['../assets/images/material-icon-theme_react.svg']
+            },
+            {
+                source:  images['../assets/images/Group 222.svg']
+            },
+            {
+                source: images['../assets/images/devicon_css3.svg']
+            },
+            {
+                source: images['../assets/images/devicon_firebase.svg']
+            },
+        ]
     },
     {
         title: 'Weather App',
@@ -173,7 +198,21 @@ const projects = [
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site',
         site:'https://weather-app-eight-chi-89.vercel.app/',
-        code: 'https://github.com/elphie-pro/Todo-App'
+        code: 'https://github.com/elphie-pro/Todo-App',
+        stackImages: [
+            {
+                source:  images['../assets/images/material-icon-theme_react.svg']
+            },
+            {
+                source:  images['../assets/images/Group 222.svg']
+            },
+            {
+                source: images['../assets/images/devicon_css3.svg']
+            },
+            {
+                source: images['../assets/images/devicon_firebase.svg']
+            },
+        ]
     },
     {
         title: 'Todo App V1',
@@ -181,7 +220,21 @@ const projects = [
         stack: 'Next.JS, JavaScript, Tailwind CSS, Firebase Auth, Firestore, Framer Motion',
         descript: 'ElphBank is a makeshift banking site',
         site:'https://todo-app-tan-pi.vercel.app/',
-        code: 'https://github.com/elphie-pro/Todo-App'
+        code: 'https://github.com/elphie-pro/Todo-App',
+        stackImages: [
+            {
+                source:  images['../assets/images/material-icon-theme_react.svg']
+            },
+            {
+                source:  images['../assets/images/Group 222.svg']
+            },
+            {
+                source: images['../assets/images/devicon_css3.svg']
+            },
+            {
+                source: images['../assets/images/devicon_firebase.svg']
+            },
+        ]
     }
 ]
 
