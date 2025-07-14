@@ -8,9 +8,19 @@
                 <img :src="pj.img" class="w-full"/>
                 <h1 class="font-custom md:text-[2rem] text-[1.5rem] dark:text-[#f4f4f4] text-[#263238] font-black">{{ pj.title }}</h1>
                 <div class="flex gap-5 items-center">
-                <h2 class="dark:text-[#f4f4f4] font-semibold text-[#263238]">Tech Stack:</h2>
+                <h2 class="dark:text-[#f4f4f4] font-semibold text-[1rem] text-[#263238]">Stack:</h2>
                     <div class="flex flex-col gap-5">
                         <p class="text-[.8rem] font-semibold w-[16rem] dark:text-[#f4f4f4] text-[#263238]">{{ pj.stack }}</p>
+                        <div class="flex gap-3">
+                            <div v-for="sk in pj.stackImages" :key="sk.name" class="flex  text-center">
+                            <div class="flex  justify-center items-center">
+                                <div class="md:w-[2.5rem] md:h-[2.5rem] w-[5rem] h-[5rem] border dark:border-[#f4f4f4] border-[#263238] rounded-4xl p-1 flex items-center justify-center">
+                                <img :src="sk.source" alt="" class="max-w-[50%] max-h-[50%] md:max-w-[70%] md:max-h-[70%] object-contain" /> 
+                                </div>
+                            </div> 
+                        </div>
+                        </div>
+                         
                     </div>
                 </div>
                 <div class="flex md:gap-5 gap-2 items-center">
@@ -63,6 +73,7 @@
 
 <script setup>
 import { NuxtImg, Title } from '#components';
+import Projects from '~/pages/projects.vue';
 
 const show = ref(false)
 const selectedProject = ref(null)
