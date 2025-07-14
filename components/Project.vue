@@ -3,29 +3,26 @@
         <h2 class="text-center text-[3rem] font-devonshire dark:text-[#f4f4f4] text-[#263238]">My Recent Projects</h2>
         <div class="grid-cols-2 flex flex-wrap items-center justify-center xl:grid mx-9 gap-x-[5rem] lg:gap-x-[9rem] md:gap-x-[5rem] md:ml-[-.05rem] ml-[3rem] ">
              <div v-for="pj in projects" :key="pj.name" class="lg:ml-[3.5rem]">
-                <SpotlightCard  class="my-4 p-[.5rem] md:p-0 md:px-[2rem] md:py-[1rem] sm:w-96 w-[80vw] md:h-[30rem] text-white dark:border-white border-[#263238] dark:border-8  dark:conic-dark conic-light" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
-            <div class="flex flex-col gap-4 py-2 md:py-0">
+                <SpotlightCard  class="my-4 p-[.5rem] md:p-0 md:px-[2rem] md:py-[1rem] sm:w-96 w-[80vw] md:h-[31rem] text-white dark:border-white border-[#263238] dark:border-8  dark:conic-dark conic-light" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
+            <div class="flex flex-col gap-2 py-2 md:py-0">
                 <img :src="pj.img" class="w-full"/>
                 <h1 class="font-custom md:text-[2rem] text-[1.5rem] dark:text-[#f4f4f4] text-[#263238] font-black">{{ pj.title }}</h1>
                 <div class="flex gap-5 items-center">
                 <h2 class="dark:text-[#f4f4f4] font-semibold text-[1rem] text-[#263238]">Stack:</h2>
-                    <div class="flex flex-col gap-5">
                         <p class="text-[.8rem] font-semibold w-[16rem] dark:text-[#f4f4f4] text-[#263238]">{{ pj.stack }}</p>
-                        <div class="flex gap-3">
+                </div>
+                <div class="flex gap-3">
                             <div v-for="sk in pj.stackImages" :key="sk.name" class="flex  text-center">
                             <div class="flex  justify-center items-center">
-                                <div class="md:w-[2.5rem] md:h-[2.5rem] w-[5rem] h-[5rem] border dark:border-[#f4f4f4] border-[#263238] rounded-4xl p-1 flex items-center justify-center">
-                                <img :src="sk.source" alt="" class="max-w-[50%] max-h-[50%] md:max-w-[70%] md:max-h-[70%] object-contain" /> 
+                                <div class="w-[2.5rem] h-[2.5rem] border dark:border-[#f4f4f4] border-[#263238] rounded-4xl p-1 flex items-center justify-center">
+                                <img :src="sk.source" alt="" class="max-w-[60%] max-h-[60%] md:max-w-[60%] md:max-h-[60%] object-contain" /> 
                                 </div>
                             </div> 
                         </div>
                         </div>
-                         
-                    </div>
-                </div>
                 <div class="flex md:gap-5 gap-2 items-center">
                 <h2 class="dark:text-[#f4f4f4] font-semibold text-[#263238]">Description:</h2>
-                <p class="text-[.8rem] w-[16rem] font-semibold dark:text-[#f4f4f4] text-[#263238]">{{ pj.descript }}</p>
+                <p class="text-[.6rem] w-[16rem] font-semibold dark:text-[#f4f4f4] text-[#263238]">{{ pj.descript }}</p>
                 </div>
                 <div class="flex justify-between">
                     <NuxtLink :to="pj.site" @click.stop :class="pj.site === '' ? 'flex items-center gap-2 text-[#b1afaf] line-through' : 'flex items-center gap-2 text-[#b1afaf]'">View Live Site <img src="../assets/images/send-sqaure-2.svg" alt="" class="w-[1.5rem]"></NuxtLink>
