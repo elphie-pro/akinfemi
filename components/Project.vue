@@ -3,15 +3,17 @@
         <h2 class="text-center text-[3rem] font-devonshire dark:text-[#f4f4f4] text-[#263238]">My Recent Projects</h2>
         <div class="grid-cols-2 flex flex-wrap items-center justify-center xl:grid mx-9 gap-x-[5rem] lg:gap-x-[9rem] md:gap-x-[5rem] md:ml-[-.05rem] ml-[3rem] ">
              <div v-for="pj in projects" :key="pj.name" class="lg:ml-[3.5rem]">
-                <SpotlightCard  class="my-4 p-[.5rem] md:p-[2rem] sm:w-96 w-[80vw] md:h-[30rem] text-white dark:border-white border-[#263238] dark:border-8  dark:conic-dark conic-light" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
+                <SpotlightCard  class="my-4 p-[.5rem] md:p-0 md:px-[2rem] md:py-[1rem] sm:w-96 w-[80vw] md:h-[30rem] text-white dark:border-white border-[#263238] dark:border-8  dark:conic-dark conic-light" spotlightColor="rgba(200, 200, 255, .8)" @click = "openModal(pj)">
             <div class="flex flex-col gap-4 py-2 md:py-0">
                 <img :src="pj.img" class="w-full"/>
                 <h1 class="font-custom md:text-[2rem] text-[1.5rem] dark:text-[#f4f4f4] text-[#263238] font-black">{{ pj.title }}</h1>
-                <div class="flex justify-between items-center">
+                <div class="flex gap-5 items-center">
                 <h2 class="dark:text-[#f4f4f4] font-semibold text-[#263238]">Tech Stack:</h2>
-                <p class="text-[.8rem] font-semibold w-[16rem] dark:text-[#f4f4f4] text-[#263238]">{{ pj.stack }}</p>
+                    <div class="flex flex-col gap-5">
+                        <p class="text-[.8rem] font-semibold w-[16rem] dark:text-[#f4f4f4] text-[#263238]">{{ pj.stack }}</p>
+                    </div>
                 </div>
-                <div class="flex md:justify-between lg:justify-between gap-2 items-center">
+                <div class="flex md:gap-5 gap-2 items-center">
                 <h2 class="dark:text-[#f4f4f4] font-semibold text-[#263238]">Description:</h2>
                 <p class="text-[.8rem] w-[16rem] font-semibold dark:text-[#f4f4f4] text-[#263238]">{{ pj.descript }}</p>
                 </div>
