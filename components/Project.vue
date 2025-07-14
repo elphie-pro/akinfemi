@@ -138,19 +138,16 @@ const projects = [
         code: 'https://github.com/elphie-pro/ElphBlog',
         stackImages: [
             {
-                source:  images['../assets/images/nonicons_next-16 white.svg']
+                source:  images['../assets/images/material-icon-theme_react.svg']
             },
             {
                 source:  images['../assets/images/Group 222.svg']
             },
             {
-                source: images['../assets/images/devicon_tailwindcss.svg']
+                source: images['../assets/images/devicon_css3.svg']
             },
             {
                 source: images['../assets/images/devicon_firebase.svg']
-            },
-            {
-                source: images['../assets/images/framer 1.svg']
             },
         ]
     },
