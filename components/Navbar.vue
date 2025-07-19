@@ -41,6 +41,26 @@
 
                     <button v-if="colorMode.value === 'dark'" class="cursor-pointer" @click="toggle"><img src="../assets/images/Group 5.svg"/></button> 
                     <button v-else class="cursor-pointer" @click="toggle"><img src="../assets/images/Group 2.svg"/></button> 
+
+                    <div v-if="link" class="fixed bg-black/50 min-h-screen z-10 w-screen flex justify-center items-center top-0 left-0 text-white" @click="link = false">
+                            <div  class="w-[20rem] h-[20rem] bg-[#263238] p-6 font-poppins">
+                                <h1 class="text-[2rem] font-bold">Links</h1>
+                                <div class="flex flex-col gap-5 mt-[2.5rem]">
+                                    <div class="flex gap-5 items-center">
+                                        <NuxtLink to="https://github.com/elphie-pro"><img src="../assets/images/mdi_github.svg" alt="" class="w-[2.5rem]"></NuxtLink>
+                                        <p class="text-[1.3rem] font-semibold">Github</p>
+                                    </div>  
+                                    <div class="flex gap-5 items-center">
+                                        <NuxtLink to="https://x.com/DevElphie"><img src="../assets/images/mdi_twitter.svg" alt="" class="w-[2.5rem]"></NuxtLink>
+                                        <p class="text-[1.3rem] font-semibold">Twitter</p>
+                                    </div>  
+                                    <div class="flex gap-5 items-center">
+                                        <NuxtLink to="https://www.linkedin.com/in/akinfemi-onadeko-5b0b852a6/"><img src="../assets/images/devicon_linkedin.svg" alt="" class="w-[2.5rem]"></NuxtLink>
+                                        <p class="text-[1.3rem] font-semibold">LinkedIn</p>
+                                    </div>  
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
