@@ -3,7 +3,7 @@
         <img v-if="$colorMode.value === 'dark'" src="../assets/images/Group 1.svg" alt="" class="fixed w-1/2 xl:max-w-[25rem] bottom-0 right-0 z-0">
         <img v-else src="../assets/images/Group1.svg" alt="" class="fixed w-1/2 xl:max-w-[25rem] bottom-0 right-0 z-0">
         <img src="../assets/images/Man developer writing programming code.svg" alt="" class="fixed w-1/2 xl:max-w-[15rem]  mt-auto md:-bottom-[3rem] bottom-[-2.5rem] xl:bottom-0 -left-2">
-        <img src="../assets/images/Programming using version control in cloud.svg" alt="" class="fixed w-1/2 xl:max-w-[17rem] mt-[12rem] xl:mt-[1rem] top-0 right-0">
+        <img src="../assets/images/Programming using version control in cloud.svg" alt="" :class="pathname === '/about' ? 'opacity-35 md:opacity-100 fixed w-1/2 xl:max-w-[17rem] mt-[12rem] xl:mt-[1rem] top-0 right-0' : 'fixed w-1/2 xl:max-w-[17rem] mt-[12rem] xl:mt-[1rem] top-0 right-0'">
         <div class="md:w-[6rem] w-[4rem] absolute">
             <div class="hidden lg:flex xl:flex flex-col gap-4 items-center">
                 <div class="w-[.1rem] md:h-[8rem] h-[4rem] dark:bg-[#000] bg-[#263238] xl:mt-[5rem] md:mt-[12rem] mt-[9rem]"></div>
@@ -17,5 +17,8 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router';
+const route = useRoute()
 
+const pathname = computed(() => route.path)
 </script>
