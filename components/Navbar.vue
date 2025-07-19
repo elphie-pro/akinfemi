@@ -36,6 +36,9 @@
                             </div>
                         </div>
                  </div>
+                    <button v-if="colorMode.value === 'dark'" class="cursor-pointer block lg:hidden" @click="link = true"><img src="../assets/images/Group 25.svg"/></button> 
+                    <button v-else class="cursor-pointer block lg:hidden" @click="link = true"><img src="../assets/images/Group 27 blue.svg"/></button> 
+
                     <button v-if="colorMode.value === 'dark'" class="cursor-pointer" @click="toggle"><img src="../assets/images/Group 5.svg"/></button> 
                     <button v-else class="cursor-pointer" @click="toggle"><img src="../assets/images/Group 2.svg"/></button> 
                 </div>
@@ -49,6 +52,7 @@ import darkImage from '../assets/images/Group 12.svg'
 import lightImage from '../assets/images/Group 11.svg'
 const route = useRoute()
 const pathname = computed(() => route.path)
+const link = ref(false)
 const open = ref(false)
 
 const handleToggle = () => {
