@@ -1,6 +1,6 @@
 <template>
     <div class="w-full block max-w-[65rem] mx-auto px-4 py-6  overflow-x-hidden dark:text-[#f4f4f4] text-[#263238] ">
-        <h2 class="text-center text-[3.5rem] font-devonshire">Who is Akinfemi?</h2>
+        <h2 class="text-center text-[3.5rem] font-devonshire">Who is Onadeko Akinfemi?</h2>
 
         <div class="flex flex-col md:flex-row justify-between pt-[1rem] pb-[3rem]">
             <div class="justify-center items-center md:w-[35rem] md:pt-[9rem]">
@@ -15,11 +15,15 @@
                 
                 
             </div>
-            <div class="text-[1.2rem] flex flex-col gap-3 text-center md:w-[30rem]">
-                <h2> Onadeko Akinfemi is a self-taught and highly motivated br> software engineer with solid experience in frontend br> development of systems that scale to a lot of users.</h2>
-                <h2>My coding journey began in the 8th grade in high school br> when many of my schoolmates were making websites for br> fun, which caught my attention. Unlike others, I didn't br> eventually drop web development; instead, it continuously br> piqued my interest and made me want to dive deeper into br> the world of tech. My career as a developer started br> officially in the 9th grade when I could confidently build br> different websites by myself and i eventually started br> working with JavaScript.</h2>
-                <h2>Today, with expertise in Frontend development and UI/ br>UX design, combined with resilience and determination, br> along with skills in various technologies like React.js, br> Vue.js, Figma, and more, I've had the opportunity to br> collaborate with great minds to engineer solutions to br> problems.</h2>
-                <h2>I'm always excited to take on challenging problems head- br> on, using the tools in my arsenal to positively impact  the br> world with ones and zeros.</h2>
+            <div class="text-[1.2rem] flex flex-col gap-3 mt-[3.5rem] text-center md:w-[30rem]">
+                <!-- <h2> Onadeko Akinfemi is a self-taught and highly motivated software engineer with solid experience in frontend development of systems that scale to a lot of users.</h2>
+                <h2>My coding journey began in the 8th grade in high school when many of my schoolmates were making websites for fun, which caught my attention. Unlike others, I didn't eventually drop web development; instead, it continuously piqued my interest and made me want to dive deeper into the world of tech. My career as a developer started officially in the 9th grade when I could confidently build different websites by myself and i eventually started working with JavaScript.</h2>
+                <h2>Today, with expertise in Frontend development and UI/UX design, combined with resilience and determination, along with skills in various technologies like React.js, Vue.js, Figma, and more, I've had the opportunity to collaborate with great minds to engineer solutions to problems.</h2>
+                <h2>I'm always excited to take on challenging problems head- on, using the tools in my arsenal to positively impact  the world with ones and zeros.</h2> -->
+                
+                <h2>I’m a self-taught software engineer with a strong passion for building intuitive and scalable digital experiences. My journey into tech started in 8th grade when I saw classmates creating websites for fun I was hooked. While many moved on, I kept going. By 9th grade, I was confidently building websites and exploring the world of JavaScript.</h2>
+                <h2>Fast forward to today, I specialize in frontend development and UI/UX design, creating smooth, responsive interfaces using React.js, Vue.js, Nuxt.js, and Figma. I’ve collaborated with teams to ship real-world solutions and also worked as a Frontend Developer & UI/UX Design Intern at Arravo.</h2>
+                <h2>I’m always excited by challenges, and I enjoy using code and design to solve real problems and make meaningful impact one line at a time.</h2>
             </div>
         </div>
         <div class="w-full block lg:max-w-[80rem] md:max-w-[45rem] mx-auto px-4 py-6 text-center overflow-hidden dark:text-[#f4f4f4] text-[#263238] lg:mt-[-2rem] mt-[1rem]">

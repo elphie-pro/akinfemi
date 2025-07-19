@@ -30,11 +30,9 @@
                 </div> 
             </div>
             </SpotlightCard>
-               
-                        
                 </div>
         </div>
-        </div>
+    </div>
 </template>
 
 <script setup>
