@@ -11,7 +11,7 @@
                 <h2 class="dark:text-[#f4f4f4] font-semibold text-[1rem] text-[#263238]">Stack:</h2>
                         <p class="text-[.8rem] font-semibold w-[16rem] dark:text-[#f4f4f4] text-[#263238]">{{ pj.stack }}</p>
                 </div>
-                <div class="flex gap-2 ml-[4.5rem]">
+                <div class="flex gap-2 ml-[3.5rem]">
                             <div v-for="sk in pj.stackImages" :key="sk.name" class="flex  text-center">
                             <div class="flex  justify-center items-center">
                                 <div class="w-[2.5rem] h-[2.5rem] border dark:border-[#f4f4f4] border-[#263238] rounded-4xl p-[rem] flex items-center justify-center">
@@ -49,28 +49,6 @@ const openModal = (projects) => {
 }
 
 const projects = [
-    {
-        title: 'Akinfemi V1',
-        img: images['../assets/images/Screenshot 2025-05-26 190840.png'],
-        stack: 'Nuxt.JS, JavaScript, Tailwind CSS, Vueuse Motion',
-        descript: 'Built the portfolio website youre looking at with Nuxt.js and Tailwind.',
-        site:'https://akinfemi.vercel.app/',
-        code: 'https://github.com/elphie-pro/akinfemi',
-        stackImages: [
-            {
-                source:  images['../assets/images/material-icon-theme_nuxt.svg']
-            },
-            {
-                source:  images['../assets/images/Group 222.svg']
-            },
-            {
-                source: images['../assets/images/devicon_tailwindcss.svg']
-            },
-            {
-                source: images['../assets/images/framer 1.svg']
-            }
-        ]
-    },
     {
         title: 'ElphBank',
         img: images['../assets/images/Screenshot 2025-05-15 195231.png'],
@@ -193,7 +171,29 @@ const projects = [
                 source: images['../assets/images/devicon_css3.svg']
             }
         ]
-    }
+    },
+    {
+        title: 'Akinfemi V1',
+        img: images['../assets/images/Screenshot 2025-05-26 190840.png'],
+        stack: 'Nuxt.JS, JavaScript, Tailwind CSS, Vueuse Motion',
+        descript: 'Built the portfolio website youre looking at with Nuxt.js and Tailwind.',
+        site:'https://akinfemi.vercel.app/',
+        code: 'https://github.com/elphie-pro/akinfemi',
+        stackImages: [
+            {
+                source:  images['../assets/images/material-icon-theme_nuxt.svg']
+            },
+            {
+                source:  images['../assets/images/Group 222.svg']
+            },
+            {
+                source: images['../assets/images/devicon_tailwindcss.svg']
+            },
+            {
+                source: images['../assets/images/framer 1.svg']
+            }
+        ]
+    },
 ]
 
 </script>
