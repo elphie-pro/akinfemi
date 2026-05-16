@@ -19,7 +19,7 @@
         </div>
       <motion  is="div" preset="slideVisibleBottom" :duration="1800" class="flex gap-7 md:flex-row pt-[2.5rem] justify-center">
         <motion  is="button" preset="slideVisibleLeft" :duration="2000" class="md:w-[10rem] md:h-[2.5rem] w-[7rem] h-[2.5rem] dark:bg-[#f4f4f4] bg-[#263238] text-[#f4f4f4] dark:text-[#263238] text-[1rem] md:text-[1.2rem] rounded-xl md:rounded-2xl cursor-pointer" @click="sendEmail">Contact Me</motion>
-        <motion  is="button" preset="slideVisibleRight" :duration="2000" class="md:w-[10rem] md:h-[2.5rem] w-[7rem] h-[2.5rem] dark:border-[#f4f4f4] border-[#263238] dark:text-[#f4f4f4] text-[#263238] border text-[1rem] md:text-[1.2rem] rounded-xl md:rounded-2xl cursor-pointer"><NuxtLink to="https://drive.google.com/file/d/1fNDQ65ThoWFEs_Nzqjuz8yy8eeqRgZJK/view?usp=drive_link">My Resume</NuxtLink></motion>
+        <motion  is="button" preset="slideVisibleRight" :duration="2000" class="md:w-[10rem] md:h-[2.5rem] w-[7rem] h-[2.5rem] dark:border-[#f4f4f4] border-[#263238] dark:text-[#f4f4f4] text-[#263238] border text-[1rem] md:text-[1.2rem] rounded-xl md:rounded-2xl cursor-pointer"><NuxtLink to="https://drive.google.com/file/d/1XCnWfMPbSqmLfJA-OzXzOWYrEEnHzIMB/view?usp=sharing">My Resume</NuxtLink></motion>
       </motion>
     </div>
 </template>
@@ -27,7 +27,7 @@
 <script setup>
 import DecryptedText from '../components/DecryptedText.vue';
 const sendEmail = () => {
-  window.location.href = 'mailto:onazjr2006@gmail.com?subject=Hello, I would like to make enqiuires.'
+  window.location.href = 'mailto:onadekoakinfemi@gmail.com?subject=Hello, I would like to make enqiuires.'
 
 }
 </script>
